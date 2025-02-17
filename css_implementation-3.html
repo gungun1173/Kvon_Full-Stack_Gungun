@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+<style>
+    body {
+        background-color: rgb(9, 237, 9);
+        background-image: linear-gradient(rgb(9, 246, 9), rgb(236, 214, 18));
+        height: 17vmax;
+
+    }
+
+    .game-1 img {
+        width: 10vmax;
+        transition: width 2s;
+    }
+
+    .game-2 img {
+        width: 10vmax;
+        transition: width 2s;
+
+
+    }
+
+    .game-2 img:hover {
+        width: 11vmax;
+
+    }
+
+    .game-1 img:hover {
+        width: 11vmax;
+    }
+
+    .ball-1 {
+
+        width: 40px;
+        height: 35px;
+        border: 2px solid black;
+        border-radius: 100%;
+        background-color: red;
+        animation-name: moving;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: 10;
+
+    }
+
+    .ball-2 {
+        animation-name: left-moving;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: 10;
+        width: 40px;
+        height: 35px;
+        border: 2px solid black;
+        border-radius: 100%;
+        background-color: red;
+
+
+    }
+
+    .cricket-2 {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-top: 8vmax;
+
+    }
+
+    @keyframes moving {
+        0% {
+            left: 0px;
+            right: 0px;
+        }
+
+        50% {
+            left: 1100px;
+            right: 1100px;
+        }
+
+        100% {
+            left: 0px;
+            right: 0px;
+        }
+    }
+
+    @keyframes left-moving {
+        0% {
+            left: 0px;
+            right: 0px;
+        }
+
+        50% {
+            left: -1100px;
+            right: -1100px;
+        }
+
+        100% {
+            left: 0px;
+            right: 0px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(4, 194, 246);
+
+    }
+</style>
+
+<body>
+    <h1>Welcome To IPL Premiere League!!</h1>
+    <div class="cricket-1">
+
+        <div class="game-1">
+            <img class="img-class" src="cricket.svg" alt="">
+        </div>
+        <div class="ball-1">
+
+        </div>
+        <div class="cricket-2">
+
+            <div class="ball-2">
+            </div>
+            <div class="game-2">
+                <img class="img-class" src="cricket.svg" alt="">
+            </div>
+
+        </div>
+</body>
+
+</html>
