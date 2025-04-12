@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+
+<body>
+  
+
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="navigation d-flex flex-row">
+                <div class="logo ms-5">
+    
+                    <img src="logo.jpg" width="60" height="60">
+                </div>
+    
+    
+                <ul class="navbar-nav d-flex flex-row justify-content-start mt-3 ms-3">
+                    <li class="nav-item px-2">
+                        <a href="men.html" class="nav-link text-dark" onmouseover="showhome(0)"
+                            onmouseleave="hidehome(0)">MEN</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="women.html" class="nav-link text-dark" onmouseover="showhome(1)"
+                            onmouseleave="hidehome(1)">WOMEN</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="kids.html" class="nav-link text-dark" onmouseover="showhome(2)"
+                            onmouseleave="hidehome(2)">KIDS</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="living.html" class="nav-link text-dark" onmouseover="showhome(3)"
+                            onmouseleave="hidehome(3)">HOME &
+                            LIVING</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="beauty.html" class="nav-link text-dark" onmouseover="showhome(4)"
+                            onmouseleave="hidehome(4)">BEAUTY</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="studio.html" class="nav-link text-dark" onmouseover="showhome(5)"
+                            onmouseleave="hidehome(5)">STUDIO</a>
+                    </li>
+                    <li class="nav-item tool">
+                        <a href="" class="nav-link text-danger">NEW</a>
+                    </li>
+                    <li>
+                        <a class="dash-0 hidden" id="dash-0"></a>
+                    </li>
+                    <li>
+                        <a class="dash-1 hidden" id="dash-1"></a>
+                    </li>
+    
+                    <li>
+                        <a class="dash-2 hidden" id="dash-2"></a>
+                    </li>
+                    <li>
+                        <a class="dash-3 hidden" id="dash-3"></a>
+                    </li>
+                    <li>
+                        <a class="dash-4 hidden" id="dash-4"></a>
+                    </li>
+                    <li>
+                        <a class="dash-5 hidden" id="dash-5"></a>
+                    </li>
+    
+    
+                </ul>
+    
+                <div class="searchbar d-flex flex-row">
+                    <div class="search ps-2">
+                        <img src="search.png" alt="" width="20" height="20">
+                    </div>
+                    <span class="search-content">Search for products, brands and more</span>
+    
+                </div>
+            </div>
+            <div class="sidebars d-flex">
+                <div onmouseover="showhome(6)" onmouseleave="hidehome(6)" class="profie d-flex flex-column px-3">
+                    <img src="profile.png" width="24" height="22" alt="">
+                    <span>Profile</span>
+                </div>
+                <div class="fav d-flex flex-column px-3">
+                    <img src="fav.png" width="24" height="22" alt="">
+                    <span>Wishlist</span>
+                </div>
+                <div class="shop d-flex flex-column px-3">
+                    <img src="shopping.png" width="24" height="22" alt="">
+                    <span>Bag</span>
+                </div>
+            </div>
+        </nav>
+        <div class="men-press d-flex hidden" id="content-0" onmouseleave="hidehome(0)">
+            <div class="grid-1">
+    
+                <div class="topwear">
+                    <h6 style=" font-size: 13px; font-weight: 700; color:rgb(248, 72, 116);">Topwear</h6>
+                    <div class="row">
+                        <div class="col"> T-Shirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Casual Shirts </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Formal Shirts </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Sweatshirts </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Jackets </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Blazers & Coats </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Suits </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Rain Jackets</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="Indian">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Indian & Festive Wear</h6>
+                    <div class="row">
+                        <div class="col">Kurtas & Kurta Sets</div>
+                    </div>
+                    <div class="row">
+                        <dic class="col">Sherwanis</dic>
+                    </div>
+                    <div class="row">
+                        <div class="col">Nehru Jackets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Dhotis</div>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="grid-2">
+                <div class="Bottomwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Bottomwear</h6>
+                    <div class="row">
+                        <div class="col">Jeans</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Casual Trousers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Formal Trousers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shorts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Track Pants & Joggers</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="Innerwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Innerwear & Sleepwear</h6>
+                    <div class="row">
+                        <div class="col">Briefs & Trunks</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Boxers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Vests</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sleepwear & Loungewear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Thermals</div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="plus">
+                        <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Plus Size</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-3">
+                <div class="Footwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Footwear</h6>
+                    <div class="row">
+                        <div class="col">Casual Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sports Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Formal Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sneakers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sandals & Floaters</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Flip Flops</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Socks</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="Personal">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Personal Care &
+                        Grooming</h6>
+                </div>
+                <div class="goggles">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Sunglasses &
+                        Frames</h6>
+                </div>
+                <div class="watch">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Watches</h6>
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="sports">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Sports & Active Wear</h6>
+                    <div class="row">
+                        <div class="col">Sports Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Sports Sandals</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Active T-Shirts </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+    
+                            Track Pants & Shorts
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Tracksuits </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Jackets & Sweatshirts </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Sports & Accesories </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Swimwear</div>
+                    </div>
+    
+    
+    
+                </div>
+                <hr>
+                <div class="gadgets">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Gadgets</h6>
+                    <div class="row">
+                        <div class="col">Smart Wearables</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Fitness Gadgets </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Headphones </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Speakers</div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="grid-5">
+                <div class="fashion">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Fashion Accessories</h6>
+                    <div class="row">
+                        <div class="col">Wallets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Belts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Perfumes & Body Mists </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Trimmers </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Deodrants </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Ties, Culfinks & Pocket Squares </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Accessory Gift Sets </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Caps & Hats</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Mufflers Scaves abd Gloves</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> Ring & Wristwear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Helmets</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="bags">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Bags & Backpacks
+                    </h6>
+    
+                </div>
+                <div class="luggage">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Luggages &
+                        Trolleys</h6>
+                </div>
+            </div>
+        </div>
+    
+        <div class="men-press d-flex hidden" id="content-1" onmouseleave="hidehome(1)">
+            <div class="grid-1">
+    
+                <div class="topwear">
+                    <h6 style=" font-size: 13px; font-weight: 700; color:rgb(236, 71, 206)">Indian & Fusion Wear</h6>
+                    <div class="row">
+                        <div class="col">Kurtas and Suits</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Kurtis, Tunics & Tops </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sarees</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Ethnic Wear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Leggings, Salwar & Churidars</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Skirts & Plazzos </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Lehanga Choli </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Dupatta & Shawls</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jackets</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="Indian">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Belt, Scarves &
+                        More</h6>
+    
+                </div>
+                <div class="Watches">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Watches &
+                        Wearables</h6>
+    
+                </div>
+    
+            </div>
+            <div class="grid-2">
+                <div class="Bottomwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Western Wear</h6>
+                    <div class="row">
+                        <div class="col">Dresses</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tops</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tshirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jeans</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Trousers & Capris</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shorts & Skirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Coords</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Playsuits</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jumpsuits</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shrugs</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sweaters & Sweatshirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shorts & Skirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jackets & Coats</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Blazers & Waistcoats</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+    
+    
+    
+    
+                <div class="plus">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Plus Size</h6>
+                </div>
+    
+            </div>
+            <div class="grid-3">
+                <div class="maternity">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Maternity</h6>
+                </div>
+                <div class="Goggles">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Sunglasses &
+                        Frames</h6>
+                </div>
+                <div class="Footwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Footwear</h6>
+                    <div class="row">
+                        <div class="col">Casual Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Flats</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Heels</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Boots</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sports Shoes & Floaters</div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="sports">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Sports & Active Wear</h6>
+                    <div class="row">
+                        <div class="col">Clothing</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Footwear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sports Accessories</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+    
+                            Sports Equipment
+                        </div>
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+            <div class="grid-4">
+    
+                <div class="Lingere">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Lingere & Sleepwear</h6>
+                    <div class="row">
+                        <div class="col">Bra</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Briefs</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shapewear </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sleepwear & loungewear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Swimwear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Camisols & Thermals</div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="Beauty">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Beauty & Personal
+                        Care</h6>
+                    <div class="row">
+                        <div class="col">Makeup</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Skincare</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Premium Beauty</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Lipstick</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Fragrances</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-5">
+                <div class="fashion">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Gadgets</h6>
+                    <div class="row">
+                        <div class="col">Smart Wearables</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Fitness Gadgets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Perfumes & Body Mists </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Headphones & Speakers </div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="bags">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Jewellery
+                    </h6>
+                    <div class="row">
+                        <div class="col">Fashion Jewellery</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Fine Jewellery</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Earings </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="luggage">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Bagpacks</h6>
+                </div>
+                <div class="luggage">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Handbags,
+                        Bags &
+                        Wallets</h6>
+                </div>
+                <div class="luggage">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Luggages &
+                        Trolleys</h6>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="men-press d-flex hidden" id="content-2" onmouseleave="hidehome(2)">
+            <div class="grid-1">
+    
+                <div class="topwear">
+                    <h6 style=" font-size: 13px; font-weight: 700; color:rgb(243, 74, 27)">Boys Clothing</h6>
+                    <div class="row">
+                        <div class="col">Tshirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shorts </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jeans</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Trousers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Clothing Sets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Ethnic Wear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Track Pants & Pyjamas</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jackets, Sweaters & Sweatshirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Partywear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Innerwear & Thermals</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Nightwear & Lounge</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Value Packs</div>
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="Bottomwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Girls Clothing</h6>
+                    <div class="row">
+                        <div class="col">Dresses</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tops</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tshirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jeans</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Trousers & Capris</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shorts & Skirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Coords</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Playsuits</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jumpsuits</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shrugs</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sweaters & Sweatshirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shorts & Skirts</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jackets & Coats</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Blazers & Waistcoats</div>
+                    </div>
+                </div>
+    
+    
+    
+            </div>
+            <div class="grid-3">
+    
+                <div class="Footwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Footwear</h6>
+                    <div class="row">
+                        <div class="col">Casual Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Flats</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">School Shoes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Boots</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sports Shoes & Floaters</div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="sports">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Toys & Games</h6>
+                    <div class="row">
+                        <div class="col">Learning & Development</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Activity toys</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Soft toys</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+    
+                            Action Figure / Playset
+                        </div>
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+            <div class="grid-4">
+    
+                <div class="Lingere">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Infants</h6>
+                    <div class="row">
+                        <div class="col">Bodysuits</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Romper & Sleepsuits </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Clothing Sets </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Tshirts & Tops</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Dresses</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bottomear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Winterwear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Innerwear & Sleepwear</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Infant Care</div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="Beauty">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Home & Bath
+                    </h6>
+    
+    
+                </div>
+                <div class="Beauty">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Personal Care
+                    </h6>
+    
+    
+                </div>
+            </div>
+            <div class="grid-5">
+                <div class="fashion">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Kids Accessories</h6>
+                    <div class="row">
+                        <div class="col">Bags & Backpacks</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Watches</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Jewellery & Hair Accessory</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sunglasses </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Masks & Protective Gears </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Caps & Hats </div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="bags">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">brands
+                    </h6>
+                    <div class="row">
+                        <div class="col">H&M</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Max Kids</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Pantaloons </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">United Nation of Belton Kids </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">US Polo Ass. kids </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Mothercare </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">HRX </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    
+    
+        <div class="men-press d-flex hidden" id="content-3" onmouseleave="hidehome(3)">
+            <div class="grid-1">
+    
+                <div class="topwear">
+                    <h6 style=" font-size: 13px; font-weight: 700; color:rgb(211, 211, 8)">Bed Linen & Furnishing</h6>
+                    <div class="row">
+                        <div class="col">Bed Runners</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Matress Protectors </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bedsheets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bedding Sets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Blankets, quilts & Dohars</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Pillow & Pillow Covers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bed Covers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Diwan Sets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Chair Pads & Covers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sofa Covers</div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="floor">
+                        <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Flooring</h6>
+                        <div class="row">
+                            <div class="col">Floor Runners</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Carpets</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Floor Mats & Dhurries</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Door Mats</div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="Bottomwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Bath</h6>
+                    <div class="row">
+                        <div class="col">Bath Towels</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hand & Face Towels</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Beach Towels</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Towel Sets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bath Rugs</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bath Robes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bathroom Accessories</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Shower Curtains</div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="lamps">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Lamps & Lighting
+                    </h6>
+                    <div class="row">
+                        <div class="col">Floor Lamps</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Ceiling Lamps</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Table Lamps</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wall Lamps</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Outdoor Lamps</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">String Lights</div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="grid-3">
+    
+                <div class="Footwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Home Decor</h6>
+                    <div class="row">
+                        <div class="col">Plants & Planters</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Aromas & Candles</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Clocks</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Mirrors</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wall Decor</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wall Shelves</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Fountains</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Show Pieces & Vases</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Ottoman</div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="cushion">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Cushions & Cushions
+                        Covers</h6>
+                </div>
+    
+                <div class="curtains">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Curtains</h6>
+                </div>
+    
+    
+            </div>
+            <div class="grid-4">
+    
+                <div class="Furniture">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Furniture</h6>
+                </div>
+                <div class="home-sets">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Home Gift Sets</h6>
+                </div>
+                <div class="Lingere">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Kitchen & Table</h6>
+                    <div class="row">
+                        <div class="col">Table Runners</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Dinnerware & Serveware</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Cups & Mugs</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bakeware & Cookware</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Kitchen Storage & Tools</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Bar & Drinkware</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Table Covers & Furnishings</div>
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+            </div>
+            <div class="grid-5">
+                <div class="fashion">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Storage</h6>
+                    <div class="row">
+                        <div class="col">Bins</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hangers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Organisers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hooks & Holders</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">Laundary Bags</div>
+                </div>
+    
+    
+            </div>
+    
+    
+    
+    
+    
+        </div>
+    
+        <div class="men-press d-flex hidden" id="content-4" onmouseleave="hidehome(4)">
+    
+            <div class="grid-1">
+    
+                <div class="topwear">
+                    <h6 style=" font-size: 13px; font-weight: 700; color:rgb(88, 166, 222)">Makeup</h6>
+                    <div class="row">
+                        <div class="col">Lipstick</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Lip Gloss</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Lip Liner</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Mascara</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Eyeliner</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Kajal</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Eye Shadow</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Foundation</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Primer</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Concealar</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Compact</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Nail Polish</div>
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="Bottomwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Skincare, Bath & Body</h6>
+                    <div class="row">
+                        <div class="col">Face Moisturizers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Cleansers</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Masks & Peel</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Sunscreen</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Serum</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Face Wash</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Eye Cream</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Lipbalm</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Body Lotion</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Body Wash</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Body Scrub</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Handcream</div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="baby">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Baby Care</h6>
+                </div>
+                <div class="mask">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Masks</h6>
+                </div>
+    
+    
+            </div>
+            <div class="grid-3">
+    
+                <div class="Footwear">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Haicare</h6>
+                    <div class="row">
+                        <div class="col">Shampoo</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Conditioner</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Cream</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair oil</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Gel</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Color</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Serum</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Accessory</div>
+                    </div>
+    
+    
+                </div>
+    
+                <hr>
+    
+                <div class="cushion">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Fragrances</h6>
+                    <div class="row">
+                        <div class="col">Perfumes</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Deodarants</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Body Mist</div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="grid-4">
+    
+                <div class="Furniture">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Appliances</h6>
+                    <div class="row">
+                        <div class="col">
+                            Hair Straightner
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Dryer</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Epliator</div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+    
+                <div class="grooming">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Men's Grooming</h6>
+                    <div class="row">
+                        <div class="col">
+                            Trimmers
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Beard Oil</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Hair Wax</div>
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="grooming">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Beauty Gift &
+                        Makeup Sets</h6>
+                    <div class="row">
+                        <div class="col">
+                            Beauty Gift
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Makeup Kit</div>
+                    </div>
+    
+                </div>
+    
+                <hr>
+                <div class="beauty">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Premium Beauty</h6>
+                </div>
+    
+                <div class="beauty">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Wellness Hygiene</h6>
+                </div>
+    
+    
+    
+    
+    
+            </div>
+            <div class="grid-5">
+                <div class="fashion">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Top Brands</h6>
+                    <div class="row">
+                        <div class="col">Lakme</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Maybelline</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Loreal</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Philips</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">Bath & Body Works</div>
+                </div>
+                <div class="row">
+                    <div class="col">The Bath Shop</div>
+                </div>
+                <div class="row">
+                    <div class="col">Biotique</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bath & Body Works</div>
+                </div>
+                <div class="row">
+                    <div class="col">MamaEarth</div>
+                </div>
+                <div class="row">
+                    <div class="col">Macaffiene</div>
+                </div>
+                <div class="row">
+                    <div class="col">Nivea</div>
+                </div>
+                <div class="row">
+                    <div class="col">Lotus Herbals</div>
+                </div>
+                <div class="row">
+                    <div class="col">LOreal Professional</div>
+                </div>
+                <div class="row">
+                    <div class="col">M.A.C</div>
+                </div>
+                <div class="row">
+                    <div class="col">Forest Essentials</div>
+                </div>
+    
+    
+            </div>
+    
+    
+    
+    
+    
+        </div>
+    
+        <div class="studio-press hidden" id="content-5" onmouseleave="hidehome(5)" style=" position:absolute; font-size: 14px; width: 45%; height: 35vmax; background-color: white; margin-left: 27vmax;
+        ">
+            <div class="studio d-flex flex-column justify-content-center align-items-center" style="text-align: center;">
+                <img class="my-2" width="100px" height="40px" src="studio.png" alt="">
+                <div class="text-secondary" style="font-size: 16px;">Your Daily Inspiration For Everything Fashion</div>
+            </div>
+            <div class="mid">
+    
+                <img class="mt-4" width="100%" height="280px" src="studio-2.jpg" alt="">
+            </div>
+            <div class="explore d-flex mt-2 align-items-center justify-content-center" style="margin-left:16vmax; border: 1px solid rgb(216, 214, 214); height: 40px;
+        width: 192px;
+        padding: 10px 22px; gap:5px;">
+                <div style="font-weight: 600;">EXPLORE STUDIO</div>
+                <img style="margin-top: 1px;" src="arrow-right.png" height="15px" width="20px" alt="">
+            </div>
+    
+        </div>
+    
+        <div class="profile-press hidden" id="content-6" onmouseleave="hidehome(6)">
+            <div class="d-flex flex-column">
+                <h6>WELCOME</h6>
+                <span style=" color: rgb(168, 165, 165);">To access account and manage orders</span>
+                <button type="button" class="btn fw-bold btn-light border mt-2 text-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    LOGIN/SIGNUP
+                </button>
+                <!-- Modal -->
+                <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img class="modal-img"
+                                    src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/9/21/8fca3ae9-d245-443b-a142-8d568247794c1663700243878-offer-banner-300-600x240-code-_-MYNTRA400.jpg"
+                                    alt="">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ms-3">
+                                <div><span class="text-dark fw-bold my-3" style="font-size: 21px;">Login</span> or <span
+                                        style="font-size: 21px;" class="text-dark fw-bold">Signup</span></div>
+                                <input type="number" class="my-3 py-1 px-4" placeholder="+91 | Mobile Number*">
+                                <div class="my-3">By Continuing,I agree to the <span class="text-danger fw-bold">Terms of
+                                        Use</span> & <span class="text-danger fw-bold">Privacy Policy</span>
+                                </div>
+    
+                            </div>
+                            <div class="modal-footer d-flex
+                            flex-column">
+                                <button type="button" style="padding-left: 5vmax; padding-right: 5vmax;"
+                                    class="btn btn-danger text-light" data-bs-dismiss="modal">Continue</button>
+                                <div>Have Trouble Logging in? <span class="text-danger fw-bold">Get help</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="grid">
+                <div class="row">
+                    <div class="col">Orders</div>
+                </div>
+                <div class="row">
+                    <div class="col">Wishlist</div>
+                </div>
+                <div class="row">
+                    <div class="col">Gift Cards</div>
+                </div>
+                <div class="row">
+                    <div class="col">Contact Us</div>
+                </div>
+                <div class=" d-flex flex-row" style="gap: 4px;  color: rgb(168, 165, 165);">
+                    <div>Myntra Insider</div>
+                    <div class="px-2"
+                        style=" border-radius: 2px; font-style: italic; background-color: rgb(244, 70, 96); color: white; text-align:center;  ">
+                        New</div>
+                </div>
+            </div>
+            <hr>
+            <div class="grid mb-4">
+                <div class="row">
+                    <div class="col">Myntra Credit</div>
+                </div>
+                <div class="row">
+                    <div class="col">Coupons</div>
+                </div>
+                <div class="row">
+                    <div class="col">Saved Cards</div>
+                </div>
+                <div class="row">
+                    <div class="col">Saved VPA</div>
+                </div>
+                <div class="row">
+                    <div class="col">Saved Addresses</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="beauty container-fluid">
+            <div class="ink-size py-3">Home / <span class="ink">Personal Care</span></div>
+    
+            <div class="ink-size"><span class="ink-1">Personal Care -</span> <span> 1485256 items</span></div>
+            <div class="filtering d-flex">
+                <div class="filter fw-bold">
+                    FILTERS
+                </div>
+                <div class="selects d-flex">
+                    <label for="cars">Bundles:</label>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Bundels</option>
+                        <option value="saab">Single Styles</option>
+                      
+                    </select>
+                    <label for="cars">Country Of Origin:</label>
+                    <select name="cars" id="cars">
+                      <option value="volvo">All Countries</option>
+                      <option value="saab">India</option>
+                    
+                    </select>
+                    <label for="cars">Size:</label>
+                    <select name="cars" id="cars">
+                      <option value="volvo">XS</option>
+                      <option value="saab">S</option>
+                      <option value="opel">M</option>
+                      <option value="audi">XL</option>
+                      <option value="audi">XXL</option>
+                      <option value="audi">XXXL</option>
+    
+    
+                    </select>
+                </div>
+                <div class="recom">
+                    <div>Sort: <span class="fw-bold">Recommended</span></div>
+                </div>
+            </div>
+            <div class="fil-below d-flex mt-3">
+    
+                <div class="sec-1 p-3">
+                    <input type="radio" id="gender1" name="gender1" value="Men" onclick="showProducts('Men')">
+                    <label for="gender1" class="fw-bold py-1">Men</label><br>
+                    <input type="radio" id="gender2" name="gender1" value="Women" onclick="showProducts('Women')">
+                    <label for="gender2" class="fw-bold py-1">Women</label><br>
+                    <input type="radio" id="gender3" name="gender1" value="Boys" onclick="showProducts('Boys')">
+                    <label for="gender3" class="fw-bold py-1">Boys</label><br>
+                    <input type="radio" id="gender4" name="gender1" value="Girls" onclick="showProducts('Girls')">
+                    <label for="gender4" class="fw-bold py-1">Girls</label><br>
+                    <input type="radio" id="gender5" name="gender1" value="All" onclick="showProducts('All')">
+                    <label for="gender5" class="fw-bold py-1">All</label><br>
+                   <hr class="my-4">
+    
+                </div>
+                <div class="sec-2">
+                    <div class="beauty-cards d-flex flex-wrap">
+                        <div class="beauty-card" id="gender3" data-category="Boys">
+                            <div class="beauty-img">
+                                <img src="https://i5.walmartimages.com/asr/4cf0537f-4268-421c-b9a4-d554d512ced3_2.6183862b8dcfe5701ed8b39872dee099.jpeg" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>TRESemme</h6>
+                                <div>Anti Frizz Argon Shampoo 1L</div>
+                                <span>Rs 532</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender3" data-category="Boys">
+                            <div class="beauty-img">
+                                <img src="https://images-static.nykaa.com/media/catalog/product/d/3/d35520eNYUMI00000002_1jh.jpg" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>MEGLOW</h6>
+                                <div>Apricot Scrub</div>
+                                <span>Rs. 289</span>
+    
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender1" data-category="Men">
+                            <div class="beauty-img">
+                                <img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/352655/lakme-sun-expert-tinted-sunscreen-50-spf-50-g-14-17-21_1_display_1709803054_20ff8be0.jpg" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>Lakme</h6>
+                                <div>Tinted Sunscreen SPF 50 </div>
+                                <span>Rs. 670</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender4" data-category="Girls">
+                            <div class="beauty-img">
+                                <img src="https://m.media-amazon.com/images/I/61F2fBdQcOL._SL1399_.jpg" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>FACES CANADA</h6>
+                                <div>Strobe Cream - Rose Gold</div>
+                                <span>Rs. 430</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender3" data-category="Boys">
+                            <div class="beauty-img">
+                                <img src="https://th.bing.com/th/id/OIP.Xoif_X7MTpiIQsSkDUFxMgHaHa?rs=1&pid=ImgDetMain" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>Lakme</h6>
+                                <div>Frizz Free Oil Serum 100L</div>
+                                <span>Rs. 339</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender2" data-category="Women">
+                            <div class="beauty-img">
+                                <img src="https://th.bing.com/th/id/R.470111f1edf3111954941bc6cb5e728a?rik=thF%2fry%2fnNjqrjg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-Xx5GPVDH6Zc%2fVIB32H3VgrI%2fAAAAAAAACUQ%2f0kzMcuDbUkw%2fs1600%2fIMG_0774.JPG&ehk=fXlscEt7bF89RrIQ8Y57ss5MyLlnhha7Cy7LctDhV6Q%3d&risl=&pid=ImgRaw&r=0" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>Swiss Beauty</h6>
+                                <div>Color shades Pallette</div>
+                                <span>Rs. 899</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender1" data-category="Men">
+                            <div class="beauty-img">
+                                <img src="https://cdn01.pharmeasy.in/dam/products/I08057/meglow-men-cream-50gm-3-1652180499.jpg?dim=700x0&dpr=1&q=100" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>MEGLOW</h6>
+                                <div>Utra Moist Hair Gel</div>
+                                <span>Rs. 399</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender4" data-category="Girls">
+                            <div class="beauty-img">
+                                <img src="https://vatennitaly.com/wp-content/uploads/2019/03/651-e1551533213244.jpg" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>VATENN ITALY</h6>
+                                <div>Pro Matte Concealar</div>
+                                <span>Rs. 799 </span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender2" data-category="Women">
+                            <div class="beauty-img">
+                                <img src="https://herlovelypleasures.com/cdn/shop/files/DSC07849.heic?v=1699819165&width=1946" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>LOVELY</h6>
+                                <div>Lovely Shampoo</div>
+                                <span>Rs. 650</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender1" data-category="Men">
+                            <div class="beauty-img">
+                                <img src="https://th.bing.com/th/id/OIP.LN2v6ajtGsx1rNSA-uMceQHaHa?rs=1&pid=ImgDetMain" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>AARON</h6>
+                                <div>Diram Oud EDP - 100ml</div>
+                                <span>Rs. 799</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender2" data-category="Women">
+                            <div class="beauty-img">
+                                <img src="https://i5.walmartimages.com/asr/c634a91f-fe2b-42b2-98d7-dc3446c21884.f678fdcf6b3b1a3fd872113d5148c3f2.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="">
+                               
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>NEUTROGENA</h6>
+                                <div>Enriching Treatment Hair Mask</div>
+                                <span>Rs. 462</span>
+                            </div>
+                        </div>
+                        <div class="beauty-card" id="gender1" data-category="Men">
+                            <div class="beauty-img">
+                                <img src="https://m.media-amazon.com/images/I/41qTkOR8oOL.jpg" alt="">
+                            </div>
+                            <div class="beauty-body p-2">
+                                <h6>Swiss Connection</h6>
+                                <div>Unisex Vented Hair Brush</div>
+                                <span>Rs. 329</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="grid-area d-flex flex-row mt-5" style="font-size: 13px;">
+            <div class="grid-1" style="color:gray; font-size:15px">
+                <h6 class="mb-4" style="font-size: 12px; font-weight: 700; color:black;">ONLINE SHOPPING</h6>
+                <div class="row">
+                    <div class="col"> Men </div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Women </div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Kids</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Home & Living</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Beauty</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Gift cards</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Myntra Insider</div>
+                </div>
+    
+    
+            </div>
+            <div class="grid-2" style="color:gray; font-size:15px">
+                <h6 class="mb-4" style="font-size: 12px; font-weight: 700;  color:black;">CUSTOMER POLICIES</h6>
+                <div class="row">
+                    <div class="col">Contact Us</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> FAQ</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">T&C</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Terms Of Use</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Track Orders</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Shipping</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Cancellation</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Return </div>
+                </div>
+                <div class="row">
+    
+                    <div class="col"> Privacy Policy </div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Grievance Redressal </div>
+                </div>
+    
+    
+    
+            </div>
+            <div class="grid-3" style="color:gray; font-size:15px">
+                <h6 style="font-size: 12px; font-weight: 700;  color:black;">EXPERIENCE MYNTRA APP ON MOBILE</h6>
+                <div class="row my-4">
+                    <div class="col-6">
+    
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZwAAAB6CAMAAAC89RUgAAABNVBMVEUQDw3///8AAABXeMU7rUnrMTGkpKP2tgumpqWUlJNdXVx4eHcNDAoKAAA7UIFZe8rx8fEGBADV1dU4ODfCwsIdHBsuLi35+fnd3dwAAA3s7OyCgoGJiYhgYF7R0dHf39+xsLAADgycnJsOAApOTUw6r0RwcG9Ufbq9vbztLy21tLRNTEv/vQv2ugklJSMXFhQzMzFBQUBBo2N7aqfiNTvjMDAiVicfSSI4o0XntBHgpguJZgxprz1xVQzsPS7FKytwHRwkEQ8+FRQVKRYZNxsUHxIyjT02mkIseTUZMRopbjEiMTxRe7AmZC08n1U+pVUwgzlPokC6jQw/MAwvJQ3AjgxLOQ2fdwzmqgsdGQ1Zp2Gpfwv3mhD1pRDnmRJVQAxbFxmVIyKvJyctRW0wExEwICp+Hx5XJ2kdAAATeUlEQVR4nO2de4ObxrXAYbpmQRrXIJBQQAItK1OttEWr6zh147TO23WbtE36SHt9e2/jm5vv/xHuPGEGBoQeG2l3dfLHOgKhET/OY845M9J0LkE8t6zEOMkBJbGseWznSDT215+ZlmGa5qGH97AFA7DMmS/D6VnoiBWm485JDijjNLRMpD89Ec4cmbPRIoPgJAcWmE1HyLzNCziTxLSm6IB2koMLUpBOYiYTDgfpzSgDhx7VSbiAbER1B8HpJeao7xx6RCcpxMlGZtLDcHzLsLITm6MSJ0NQfARnZhjTk007MgEdI5npWmAaoxOboxMwMsxAiy1zcYJzdAKmphVrc+RxTjH00QlEXmeuWWZ4YnOEAkPTQnDSk1U7QgEpgpOY44PCcTaL4utOh/ctvwHGZqIZRueQcMDNzSYfX3e6Axf3jA4Kpo0DwwFdXd9Ac0GqPh1qse5p94rOMcCZ6HqyARx0uqmCk+l6cL+CziOA4wy8aNn+psLMi/qq04HVC+9XXHMEcDQAAHHxEAl/jf8TMqk5XXoL0ID03vK/75y0hgPh48e380XhEgkkf/vQ4a/1++RvHx9cYiCgejoRyFiRc8kA0d88Muj3N1DKY5OWcODl8rPPP3/zxeXjWxiCZdtd9PnAs4OA1S3A3LYHDnbyAZXeaMUYgJFth/x0LLFFClGwH9gesncgRa9Z9PuAhW8bd9fUtYNz+fjrL188fXr2+ndvLvf+IIJE18ndxlVz5uqBp+sETtGG4pt9wE/HaVoQFU1DODMI+7o+xHBQ8KfbNNoGU12f3HM4l29enzF58bvPLvc9BBGOT3MVAhw/Hg5j0isUD4Amw4mH6D90KHABMnO63uNw9BkxbA8AzuWbF2e5PH399eP94pHg6DG9qwWcIfY3ziLxdZ1EaQIce4qPLWKicDIcnUC+/3DgFwIbgudXe7VtApwA8SHuQoATYyLI698Euo79hwiHDBuskOoAKMJB7w5wIHD/4Vz+/qwsf/5ij3hEOOhmBitQhYNPS33dR2pVgQOzoa47EpxwRue19x4O/KLCBsnv94dHhDOw0GOvhgPxayiqq8BxMqRTsuZYfeSr0MH7D+cPf3qqoPP6g325HgGOvcBakAKogKOBUNfnZThY0OuRDMcAFn7t/sNxfv4LJZ2nX/7q8V5mPSKcKeigmCBzlHBWRKsEOH7XXa06JnX/IhwTLHtYze49nMc/f/LVn1SW7exsP7MeGQ6Y4QdfBce5wXCgGEr7tm3jju8E+SIZDoHsPgQ4T756rdKds6cvUFi9M54SnBVyF9N2msNk2AUknSPCIcnrOVjcfzg/e/LVH5V0sOuBu7oeGY5GXcisjc/x59YcscnI1KgEx7lB05+p+wDg/OzJL17U0Dn785sdE24lOBDgmGDeKlpDihbzYlAJDvkbPQg4iE6d7uzsekpw0JB8PWg7zwFTmxVGy3CI3TMfBJwm3Tl78cHlDratDIe4C72SIXDVGQIcNMdLRwWnQ7KmDwEOovMftXRwRmdr21aB4/RjAQ7JrcGpocqtdbAVjLArKkdr5MLWg4GD6CjnO9z1fLatbavAIa6/TVaaZAjAwia+qAoHwvjBwGn0O2fbZ3SqcEj2pkU9x6eJT4TSzhyxnsOrQunDgdMQUTPXo23jeoRKaMz66cE0DlpUQmOa+NRmtj0BQiXUZs08EBdU73UlVICzxrKdnX35+RauB/cL0KaA/jIflras7yHIT++zV5w+PrvoIcj7BiC45z0EIpzGqIC6ni3Cat5Co+qaUXTfVE9nrwjvKZ97N2VDOGt15+zF17uE1ScRZVM463Xn6YsP3nvvJ/wG91g2hrNed86++fYv791hY3I8sjmctbrzza+vz9/+9YRnd9kCzhrd+ebX5+fn1x++hCfbtqtsA6dRdz7CbAie35xcz46yFZwGOpwNlr/9/WTbdpLt4NRmckQ259f/+A6e8OwgW8Kp0Z2Pfnkuyz9eLrexbXd55rhH2RaOMiqQ9IZpD7JtGyS35N3eHvpuPFvDUehORW8onm9bux6EZhrOSTFHt6Okm90+HvY0tBtgdaNAR3jjJldqJ9vDqeiOQm+Y63nZig766mlUlAhwAce8bTxQm/SQTJTrGCsnZ/OeKNG8OyhoAAO/5g32SGcHOCXdqWNDbNs/1w8ZgDDWK2Jmt7p8HWpkaUOvFRxnUB1gL2RrHWkNSrfdPT5Nu8CRYrYGNti0rXXx4MarosELozq3SQdq0SZwhooBxiuhQHhEcATdaWSD6LxsDtogGAdKNvpGy+A3lj3A0f0wX+91VHByOupYQJAPGw0bZCueiKr0jLDbHc1ivrOyfov79O0DDulgOEY4zLKt0Rssv2lSnYKNF/Z5JNQx/KPUnJhvzz3hDcH2AhwlHKI7H61Fc379XQMc3HVOZDguoh8UvGW4gW10bD7HKyLpjO79rPdws+MRwkF0/nO93pxfv62Hk0dBXik0c5BGJbccrW0BxxGeH4uOHHc3HiWcZ7/9r3UepxkOYHGaWZnUQHDL23TtBgcPkHanzuh6r2OD8+TZ+1e//ddaOg1mDYwpm5mjuEO3nGTbFY4GFiTKHGZHCefZ86tHj1roTm1AwO6PHh8ilbYzHMZEXzlHCAfpzSMka3Xnw1odwKvPsBxkJ8ud4WjAJKNfgKOD84SxWas71/WRNLPaXmvnUqQfq++ATkNGOz+Gz8MCFXCc+our4RhqOEKSlC+bZJ8pDbfykii7pW+ITWtB5/pt7a2HIODxTiuBYNkJ59EwmofTfvk9ALhp4vV6XpK6ZTwQDMboWDTvroCzdLH0YRkOBDfkArNRZ1kZkBoOM2slOA5YdSe9IMDDZFciH+mKDaiwT166qfuuOyU+c71ZY9mu39an1vBSKSR+SzYAhMWGRFEIxLdB4M7zJFBgDqQHAkW9PG1pm85iiLebwmk7CQ7QjDy3GY3LD5QKDlndiBdAyD4HDOZFfj1K8YMCJqTpW7TeICEvzeu++y5wnl0JbOp1B7d61JssNlOoHWDp7KmcQRkKA3f6hnRMHwl+Ts7dxV38RPhjGQ4EqVSxmENZ+ZTRGnU5cigNwcgXL6R7A8CzID1hwNkao7FDsU3Sm3rduf7ur42ZG/rtLGkAqt9jordYunv0BufviUrH2NZR5GAq3y1bV8Chy4JEOqU5cQWOw6cBoTQJBaPySKLM4fa7+LUVhiuoNfnbl6lLelOnO9+uaS8ENAPSFQcAOlGvJEOyWnRc/tLFO52sVz3mMQtfue0crAhHSL7m75fuWzV900/oeUMpfUOWBZXp5KqT2wjInqb63/jYusGjojdK3VnbvAbxona9FEirvh1eR71ipsmfhGk4YUpku0CAjG70qNvN3QtNmoIbpjeB2U1HuYLJcMjSXyxxmI67LGkh7ejK4PRSJqM5/5hUSnwC9nI0StNwlp/iDMjw4xumOk5Gx3RTG3xvC0eI0yQ6/y3QwfXpdb03reEgu8ftlkHNnsNcTIRdC1eq4ZQ+0ym7QVjh+DTXT+ixRU8Jh55kd+lJ1IAGK2FctSWDkVwyAB384NhjeiGXXre3hCzq5sDZ/6q2Yd4NjlJvKJ0Czts2/exKs6aAkwA+Wx0BHq0yYzXGC0LpLYj4784BlkzFOSFur1JmpMAgqsLB+4Po5JZC8eJGCzhGvn8f9zlgNcrDMpCRj/A76FWiwDG3w3SE7p7hqG2arDvXf/ufVj1RLCAYrdccNqMwhaICffbwnitUcYJBfhlupVa5xllFeHCjgDMvHmtcrWC/0+kLkwA1HJsxl0NpUcb8ysxKsFXJ9JGZNUy+t2pkr7Fpou607pRmofRMgjP1RGHfzY3p/S9MNATkUbQzR4E4fwkvs9b5/pTiMREOyIaMEt6fujPJgztBpVVwgoQ/D/IkFBlPPAm141m4AOQxQe6P1a3Y/qMRG0PDvdliCUiD3lA61+ffaW171ZSTUOnBc8k3GrMHUJoQsZucAuqDbfFHAZm/RbFVyhRHeN+4PM9himbiDxSmuV6YVTTHZ2uIg6FnCq11IhxkJL086PfpTxnjbUjpp+HtYjWHPjLDpqzVFnAUMbQkV89f/rN9izQP/2ufIKZaK+YEZOfUZfcdsG8qvZG6dMCM37TiPSQ4lGAKpmauNMHElVJs1VBaTOEJcByHh46C4CX3wnPCRtWY7t182eEavXl09erfG3WvM2Nfl/hkM2/kTejMThop1QD8vDN7IV2YeI3AYZZejLtou5oEh2JOigc+HrlAPQkFilXEIhwIFGwIHEgfGGRhIZ2WiUZacWs2XbC7Rm+uXn18cdHweYoRNJcMmL2ZsYqwL7XiMJtoAodcQs4BUaMeMLq+BIccU8DhYs+m1cS2MvFZfFwRSk8438jzIj4XIptVsCcs5ba2uXll06XuzXpz9fz7TzZDo+VRcE2xjX3TEWBmTTUhSpjmRDIcYi+RWaNXEH/PEfYrmiMGiPZoARQ3pCUc5uz0OHVR2Advxp4Ah86jZyz09BsVZ1M4jXHao0fvNkajCWVqFR0W4PhoCkdvnzRnY/4IzRuJetmiGYIUWA8onBUtLktwOtzV+F4KVGhawwE0p+ORNneIK0zC7lUshHEzhaorvvwmcJr15tW/N7RofAwzrvgVOmBKwwU0F2TVerFoCWmQhiwWs/JSPj7kWuVW1Ioek+CwSWtgrByOuIyoHRyuFLmmsoePwmFqZdGnak0Ra6ONiZrYXD3/cTs0eE7IcmZeqdfGAR16JMBu1onKGsCUKc6TilGBF7AJON6Ykueg+TEWIcqTUPqEjIRlA9Ppuqy09C04HHrJIY/BeZfBRGqpJoOL6oug9NwNtvR69qiWDXI22pZo8CCmzKbEqVPcDwdN05mpof2uFICdhwQcXQh4zYtlUsib6c3GW7Qx4xfzRAlk81MZzrR89VXsJ1I5dCPN4flMyOsHHI5QvFjXNrHBZngNenP17tPt0WhiAcTr5lOI5YgHOtQ08xlRgLf6xqV+xibGU0/e3Wfyuv28wOq49MTeir2RZUxLiU86/Q/4SS7+/0gMI9r6HPrRCbsOf8AYHOjkaYb6Qg6/ZGs4DTH0q0+3tWj5MITnKTJG4ciaFGthJjxhycs5XrpwF2mRjNdy94O+sdVZrToWu5xHvTAPxcx05U7zZUAlODwkmI9X7ipl4bAYT7WFw5qLIzTKaZij4Pu+FXHh2h9rb70Ba63eIGez3BENGXK5xplLHsVBFgdhBHFedeYb3/FyjG4HASfNLBl3KPiNgbC9XqnYlquvcHVrc83hOoivI3wpDgc67OJSOUJ9U1puXVynN8jZXFzsoy0TLNWLp/ywUH7uLETJe6nxbuEliQe5l5lU3liBA3MLVMhIlb5ZC2chj8TzRTiCBV57T9pt+l2rNzs6G0Ec2FWsn4qkiAk6peq8X9QB0D0pJY29olTiQBlrom7wCEudBqHkFdrCKSwkkUCTd+nlBd3mCSg5sxWcmjjtatuZjVLQdDqUtceejUtzDQhWM+GLo9svLWe2hEWbPalvCoJOkWvudUh46OPWKJLiGtLJEwSucHV/lskfzlZD1ATAbHpDstLoOsUYB0DWHIfOHLz11a5WcGryAs9/3CYh0CAQOKvuDLkFJEFspq5ipg7AyurhM4KetaqgG6Qz+u7JuNxxCLSOSd4XdTNWMsBh83SMZFq9ejQqX12DS3LyQm3FnQU+2KGYgTNN4gB5v/kYr9/vIFnltQWaJGzRftziJ1r+V8nm6tH3P+wXDRbSxKoN3JuM5ONVt4GcMnAHypZZHLtmrttXHIP4jX33Bh+iERMrKfO+q/zqzsDNlFeHpZNlYTG8cGq2pC9IxQU2I2gs5PArrv9xo/9T+pt3O4fP9Z+I+4cbhw6bOoyh6hgApMOQHaOBmV1zjcarbyDq/UXZXLq7XnFa/drhc4Wz2bQwcFBBj/FqJmbnaTUhbtPjsP+xEC9nt9m0twWcix8r4fPWabSDCLzpDnW2QzgRlqqxDgGHV/VaNb+0+RHXV5Jdu/p+b+HzTyO87ZWtOIWANYfe4hL6hsHQiHvtBJSc2wLOxScCnatbdDa3JLS0hujwfkEacNfMV25XWP1i1uq5aKU5F5+84xOd9z+GdwyNVlTC9Z7R7SZDNpU5jOLMN/jsdj8cDi8+fffq/eev3t0tZ5NLte3/dveeqB8Izex47Xb7awcHKc+F9sMPn9xNNEJRpRDzEEaNN0S1iaO19nCwHOLb7EnQtFNK3Ik5uZ90GMSkri3kMNkEzp0W0LfyrY6C+e3u4lY/iG6MJWx5tx8MHFz1HicTbzZJuoOD7R66bEwAleXhwBFWnx9wY9dqp2iDPCQ4d05OcI5YCJzEbFolcpJDCRibiWaZLQPvk/ykArqmheCEd3kSc18FaiHSHM9I9rlX9Un2I3CQGJ4WW+YpIjg+AR3TijXfNA6TzjhJg0BgGaav6VFiHmQvupM0CEjNJNI1XU8Mo2GzgpMcQIBrGImO4QSJkZzoHJMAFyEJCBxk2IxkdfI7xyIQrBAQ3COkkeIcsmzdJVjTMHaS2xe8jLTfRTaNtIJotL6eGGaSulmxBelJDiGOlrlpYhoJ7UrRWAnKRKGbaYXdkxxUQstEUxuTVW41XryNJwlSn5McWIwkKdb15XDwWqxZYp3koJLMhkK/w/8DXbZ2n13rKSwAAAAASUVORK5CYII="
+                            alt="" height="40px" width="140px">
+                    </div>
+                    <div class="col-6">
+    
+                        <img src="data:image/png;base64,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"
+                            alt="" height="40px" width="140px">
+                    </div>
+    
+                </div>
+                <div class="grid-3_1 mt-5" style="color:gray; font-size:15px">
+                    <h6 style="font-size: 12px; font-weight: 700;  color:black;">KEEP IN TOUCH</h6>
+                    <div class="icons">
+                        <img height="30px" width="35px"
+                            src="https://img.icons8.com/?size=100&id=59780&format=png&color=000000" alt="">
+                        <img height="30px" width="35px"
+                            src="https://img.icons8.com/?size=100&id=60014&format=png&color=000000" alt="">
+                        <img height="30px" width="35px"
+                            src="https://img.icons8.com/?size=100&id=85162&format=png&color=000000" alt="">
+                        <img height="30px" width="35px"
+                            src="https://img.icons8.com/?size=100&id=ZOFC5nSr215Y&format=png&color=000000" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="original d-flex mb-3">
+    
+                    <img height="40px" width="50px"
+                        src="https://img.icons8.com/?size=100&id=bRfuH1kbxvWa&format=png&color=000000" alt="">
+                    <div class="ms-2 d-flex flex-wrap" style="font-size: 13px;"><span style="font-weight: 700;">100%
+                            ORIGINAL </span>guarantee for all products at myntra.com</div>
+                </div>
+                <div class="return d-flex mb-4 mx-1">
+    
+                    <img height="40px" width="50px" src="https://img.icons8.com/?size=100&id=7830&format=png&color=000000"
+                        alt="">
+                    <div class="ms-2 d-flex flex-wrap" style="font-size: 13px;"><span style="font-weight: 700;">Return
+                            within 14days </span> of receiving your order.</div>
+                </div>
+    
+    
+            </div>
+            <div class="grid-5" style="color:gray; font-size: 15px">
+                <h6 class="mb-4" style="font-size: 12px; font-weight: 700; color:black;">USEFULL LINKS</h6>
+                <div class="row">
+    
+                    <div class="col">Blog</div>
+                </div>
+                <div class="row">
+                    <div class="col">Careers</div>
+                </div>
+                <div class="row">
+    
+                    <div class="col">Site Map</div>
+                </div>
+                <div class="row">
+                    <div class="col">Corporate</div>
+                </div>
+                <div class="row">
+                    <div class="col">Whitehat</div>
+                </div>
+                <div class="row">
+                    <div class="col">Cleartrip</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer" style="margin-left: 84px; margin-right: 70px;">
+            <div class="popular-searches">
+                <div class="d-flex my-4" style="gap: 15px;">
+    
+                    <h6 style="font-size: 12px; font-weight: 600; color:black;">POPULAR SEARCHES</h6>
+                    <hr style="width: 75vmax; margin-top: 7px; color: rgb(179, 175, 175);">
+                </div>
+                <span style="color:gray; font-size:15px">Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones |
+                    Babydolls | Blazers For Men |
+                    Handbags
+                    | Ladies Watches |
+                    Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack
+                    Watches |
+                    Kurtis | Nike | Smart
+                    Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket | Shoes Forever 21 | Eye |
+                    Makeup |
+                    Photo Frames |
+                    Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike
+                    Shoes | Goggles | Bras |
+                    Suit | Chinos Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees</span>
+            </div>
+            <div class="contacts d-flex mt-5" style="color:rgb(173, 171, 171); justify-content: space-between;">
+                <div>In case of any Concern, <span style="font-weight:700; color: rgb(89, 89, 244);">Contact Us</span></div>
+                <div>@ 2025 www.myntra.com.All rights reserved.</div>
+                <div>Flipkart Company</div>
+            </div>
+            <hr class="my-4" style="color: rgb(179, 175, 175);">
+        </div>
+   
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function showhome(index) {
+            let test = document.getElementById(`content-${index}`);
+            let temp = document.getElementById(`dash-${index}`);
+            test.classList.remove('hidden');
+            temp.classList.remove('hidden');
+        }
+
+
+        function hidehome(index) {
+            let test = document.getElementById(`content-${index}`);
+            let temp = document.getElementById(`dash-${index}`);
+            test.classList.add('hidden');
+            temp.classList.add('hidden');
+        }
+       
+        
+        function showProducts(category){
+            
+           
+            const products=document.querySelectorAll(".beauty-card");
+
+          
+            products.forEach(product => {
+                const productCategory = product.getAttribute('data-category');
+        
+                if (category == 'All' || productCategory == category) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+     
+
+    </script>
+</body>
+
+</html>

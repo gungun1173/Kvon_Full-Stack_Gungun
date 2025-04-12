@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+.navbar-1{
+    background-image: linear-gradient(rgb(236, 222, 250), white);
+   
+}
+.nav-size{
+    font-size: 22px;
+}
+.nav-link:active{
+    fill: rgba(199, 151, 244, 0.842);
+}
+.blog-card img{
+    height: 200px;
+    width: 220px;
+    
+}
+.blog-card-1 img{
+    height: 100px;
+    width: 130px;
+    border-radius:20px;
+    
+}
+.blog-card h5{
+    margin-top: 15px;
+}
+.banner{
+    width: 100%;
+   
+}
+.btn-1{
+    position: relative;
+    bottom: 170px;
+   
+    left: 90px;
+}
+.elec-img{
+    width: 300px;
+height: 180px;
+}

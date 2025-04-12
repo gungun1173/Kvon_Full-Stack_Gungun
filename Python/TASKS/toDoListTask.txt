@@ -1,0 +1,10 @@
+{
+    "task-1": {
+        "Task": "Python_tutorials",
+        "Status": "Completed"
+    },
+    "task-2": {
+        "Task": "DSA",
+        "Status": "Completed"
+    }
+}

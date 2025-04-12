@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-3</title>
+</head>
+
+<body>
+    <h1>Sorting Numbers</h1>
+    <p id="demo"></p>
+    <button onclick="function_1()">Sort Alphabatically</button>
+    <button onclick="function_2()">Sort Numerically</button>
+
+    <h2>For Each() method</h2>
+    <p id="disp"></p>
+    <h2>Get Random Number between min=0 to max=10</h2>
+    <button onclick="document.getElementById('random').innerHTML = randInt(0,10)">On Click</button>
+    <p id="random"></p>
+    <h2>JS If/Else</h2>
+    <p id="ie"></p>
+    <h2>Switch</h2>
+    <p id="switch"></p>
+    <h2>JS Map Group BY()</h2>
+    <p id="mapGroupBy"></p>
+    <h2>Void Operator</h2>
+    <p>
+
+        <a href="javascript:void(0);">Useless Link</a><br>
+    </p>
+    <p>
+
+        <a href="javascript:void(document.body.style.backgroundColor='red');">Click me to change the bckground color of the body</a>
+    </p>
+
+    <script>
+        let points = [4, 2, 100, 40, 50, 25];
+        document.getElementById("demo").innerHTML = points;
+
+        function function_1(a, b) {
+            points.sort();
+            document.getElementById("demo").innerHTML = points;
+        }
+
+        function function_2() {
+            points.sort(function (a, b) {
+                return a - b;
+            })
+            document.getElementById("demo").innerHTML = points;
+
+        }
+        const data = [2, 43, 1, 10, 30, 20];
+        let text = "";
+        data.forEach(myFunction);
+        document.getElementById("disp").innerHTML = text;
+        function myFunction(value, index, data) {
+            text += value + "<br>";
+        }
+
+        function randInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        const time = new Date().getHours();
+
+        let Greeting;
+        if (time < 8) {
+            Greeting = "Time is after 8 o'clock."
+        }
+        else if (time > 10) {
+            Greeting = "Time is before 8 o'clock."
+        }
+        else {
+            Greeting = "Not a Good Time!!"
+        }
+        document.getElementById("ie").innerHTML = Greeting;
+
+        let day;
+        switch (new Date().getDay()) {
+            case 0: day = "Today is Sunday";
+                break;
+            case 1: day = "Today is Monday";
+                break;
+            case 2: day = "Today is Tuesday";
+                break;
+            case 4: day = "Today is Wednesday";
+                break;
+            case 5: day = "Today is Thursday";
+                break;
+            case 6: day = "Today is Friday";
+                break;
+            case 7: day = "Today is Saturday";
+                break;
+        }
+        document.getElementById("switch").innerHTML=day;
+
+        const fruits=[
+        { name:"Apples", quantity: 200},
+        { name: "Oranges", quantity: 300},
+        { name: "Mangoes", quantity: 150},
+        {name: "cherries", quantity: 500}
+        ]
+        function mycallback({quantity}){
+            return quantity>200 ? "OK" : "LOW";
+        }
+        const results=Map.groupBy(fruits, mycallback);
+
+        let temp="These fruits are OK.. <br>";
+        for(const x of results.get("OK")){
+            temp += x.name + "=" + x.quantity +"<br>";
+        }
+        temp +="These fruits are LOW.. <br>";
+        for(const x of results.get("LOW")){
+            temp += x.name + "=" + x.quantity +"<br>";
+        }
+        document.getElementById("mapGroupBy").innerHTML=temp;
+
+        
+
+
+    </script>
+
+
+</body>
+
+</html>

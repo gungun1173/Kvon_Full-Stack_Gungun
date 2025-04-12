@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Web APIs</title>
+    <style>
+        button{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Get the current Location of the user!!</h2>
+    <p id="demo"></p>
+    <button type="button" id="btn" onclick="myFunction()">Try it</button>
+    <h2>Prompt and Alert</h2>
+    <button type="button" id="btn1" onclick="findPrompt()">Get Value</button>
+
+    <script>
+        const x = document.getElementById("demo");
+        function myFunction(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showposition);
+            }
+            else{
+                x.innerHTML="No Location Found!!"
+            }
+        }
+        function showposition(position){
+            x.innerHTML = "Latitude:" +position.coords.latitude +"<br> Longitude:" +position.coords.longitude;
+        }
+
+        function findPrompt()
+        {
+            let value = prompt("Enter a value between 0 to 100");
+            if(value==null || value==undefined || value=="")
+            {
+                alert('Input is required by the user!!')
+            }
+          else if(value < 0){
+            alert('Value Too low');
+           }
+          else if(value > 100){
+            alert('Value too high');
+           }
+        else{
+            alert('Value is OK');
+           }
+          
+
+        }
+    </script>
+</body>
+</html>

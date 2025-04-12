@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini JS Project</title>
+</head>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vmax;
+            background:no-repeat ;
+            background-size: 100vmax;
+            box-sizing: border-box;
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+          margin: auto;
+          margin-top: 20vh;
+          z-index: 1;
+          background-color: white;
+          border-radius: 15px;
+          box-shadow: 2px 2px 2px black;
+          text-align: center;
+            height: 10vh;
+            width: 30vmax;
+            border: 1px solid black;
+            padding-bottom: 15vh;
+        }
+        .demo{
+            padding: 10px;
+        }
+        .btn{
+            padding: 10px;
+        }
+    </style>
+<body>
+    <h1>Monthly Season Arrivals in India...!!</h1>
+    <div class="container">
+
+        <h2>Enter the month of your choice..</h2>
+        <input type="text" id="demo" min="1" max="12">
+        <button type="button" onclick="findSeason()" id="btn">Find Season</button>
+        <p id="seasons"></p>
+    </div>
+
+    <script>
+        function findSeason() {
+            let month = document.getElementById("demo").value;
+
+            if ((month >= 1 && month < 3) || month == 12) {
+                document.getElementById("seasons").innerHTML = "The season is Winter!!";
+                document.body.style.backgroundImage = "url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGV4NDBodTM2Mm14eWY4OHJvYmw0MWh6YXV0d29xYnBwa2owd3k5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sTUe8s1481gY0/giphy.gif')"
+            }
+            else if ((month == 3) || (month == 4)) {
+                document.getElementById("seasons").innerHTML = "The season is Spring!!";
+                document.body.style.backgroundImage = "url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHVkeHV0eHNpc2FjbG01MGN1MXVvZmlrc3Jxa21wdDRjZmZqanJyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gB4KWtd3uSsJq/giphy.gif')"
+            }
+            else if(month > 4 && month <7 ){
+                 document.getElementById("seasons").innerHTML = "The season is Summer!!";
+                document.body.style.backgroundImage = "url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3A5Yjk2NjNkZjl3c3hpcW0zcjdjanI1bGhndDZlbHltOG56MXRyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O22s721yY8Io0/giphy.gif')"
+            }
+            else if(month >=7 && month < 10){
+                document.getElementById("seasons").innerHTML = "The season is Monsoon!!";
+                document.body.style.backgroundImage = "url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9iZWR5Y3c3NzR2MXI0OW8wOTIwMTd1bms3MjkyOTdrNDI4aTJzbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t7Qb8655Z1VfBGr5XB/giphy.gif')"
+            }
+            else if(month >= 10  && month <12 ){
+                document.getElementById("seasons").innerHTML = "The season is Autumn!!";
+               document.body.style.backgroundImage = "url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG1jNDN4YjhhNWFzcXlpOXkzanNzaHJlbnRuYXM2OWRla3ZraDJ4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aNynf2OanY9Fu/giphy.gif')"
+           }
+           else{
+            document.getElementById("seasons").innerHTML = "Please Enter a Valid number between 1 to 12";
+            document.body.style.backgroundColor="red"
+           }
+        }
+    </script>
+</body>
+
+</html>

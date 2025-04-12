@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Displaying Function Constructors..</h1>
+    <p id="demo"></p>
+    <p id="disp"></p>
+    <h2>Events in JS</h2>
+    <p id="event"></p>
+    <button onclick="displayDate()">Show Date?</button>
+    <h1>String Templates</h1>
+    <p id="strTemp"></p>
+    <h1>Nested Array and Objects..</h1>
+    <p id="nesting"></p>
+
+    <script>
+        function Person(name, last, age, city){
+
+            this.firstName=name;
+            this.lastName=last;
+            this.city=city
+            this.age=age;
+        }
+        const myFather = new Person('HARISH', 'Singhal', 21, 'Gurugram');
+        const family = new Person('Pratyush', 'meghwal', 30, 'Indore');
+        Person.prototype.nationality="INDIAN";
+        document.getElementById("demo").innerHTML= myFather.firstName + " " +myFather.lastName+  " age " +myFather.age+ " is an " +myFather.nationality;
+        document.getElementById("disp").innerHTML= family.firstName + " " +family.lastName+  " age " +family.age+ " is an " +family.nationality;
+
+        function displayDate()
+        {
+            document.getElementById("event").innerHTML=Date();
+        }
+
+        let header="Template Strings";
+        let tags=["template strings", "javascript", "es6"];
+        let html=`<h2>${header}</h2><ul>`
+            for(let val of tags){
+                html+=`<li>${val}</li>`
+            }
+            html += `</ul>`;
+            document.getElementById("strTemp").innerHTML=html;
+
+            let x="";
+            const myobj = {
+                name:"John",
+                Age: 21,
+                cars:[
+                {name:"Ford", Model:["Mustang", "Fiesta","Focus"]},
+                {name:"BMW", Model:["320", "X3", "X5"]},
+                {name:"Fialt", Model:["Panda","600"]}
+                ]
+            }
+            for(let i in myobj.cars){
+                x += "<h2>" + myobj.cars[i].name + "</h2>";
+                for(let j in myobj.cars[i].Model)
+                {
+                    x += myobj.cars[i].Model[j] + "<br>";
+                }
+            }
+            document.getElementById("nesting").innerHTML=x;
+        
+    </script>
+
+</body>
+</html>

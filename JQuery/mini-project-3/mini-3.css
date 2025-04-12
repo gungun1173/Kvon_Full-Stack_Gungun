@@ -1,0 +1,13 @@
+.content{
+    align-items: center;
+}
+.sign{
+    position: absolute;
+    top: 100px;
+}
+.create, .forgot-mail{
+    font-size: 13px;
+}
+/* input:active{
+    border-color: rgb(93, 169, 249) !important;
+} */

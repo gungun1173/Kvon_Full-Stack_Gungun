@@ -1,0 +1,1 @@
+{"Name": "dimple", "Age": 23, "Marks": 89}{"Name": "Gungun", "Age": 22, "Marks": 90}{"Name": "Rimmi", "Age": 20, "Marks": 78}

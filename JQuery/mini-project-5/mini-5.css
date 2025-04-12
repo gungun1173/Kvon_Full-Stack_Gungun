@@ -1,0 +1,26 @@
+
+.popup{  
+   position: absolute;
+   margin: auto;
+   box-shadow: 2px 2px 2px rgb(52, 47, 47);
+  
+    top: 150px;
+}
+.text{
+    font-size: 22px;
+}
+.cross{
+    position: absolute;
+    right: 15px;
+}
+.hidden{
+    display: none;
+}
+.in{
+    position: absolute;
+    /* bottom: 120px; */
+    bottom: 5px;
+    right: 10px;
+}
+
+

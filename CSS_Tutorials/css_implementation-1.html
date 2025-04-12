@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INTRO TUTORIALS..</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url('bg.jpg');
+      background-repeat: repeat-y;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+       height: 50px;
+       position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        opacity: 0.9;
+      
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        
+        background-color: rgb(15, 9, 9);
+        
+        height: 50px;
+        position: absolute;
+        height: 400px;
+        width: 13%;
+        padding: 10px;
+        border-radius: 0px 0px 10px 0px;
+        opacity: 0.7;
+    }
+    .sidebar a{
+        text-decoration: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+    .sidebar a:hover{
+        background-color: gray;
+        color: back;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .sidebar button{
+        margin-top: 10px;
+        padding: 10px;
+        font-weight:bolder ;
+        color: white;
+        font-size: 18px;
+        
+        text-align: center;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: aqua;
+    }
+    .upheads{
+        margin-left: 10px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+    }
+    .upheads a{
+        color: rgb(125, 174, 93);
+        justify-content: center;
+        margin-left: 50px;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       
+        align-items: center;
+      
+    }
+
+    
+    .sideheads{
+        display: flex;
+        justify-content: center;
+    }
+    .sideheads button{
+        margin-right: 30px;
+        color: rgb(125, 174, 93);
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        background-color: black;
+        
+    }
+   .upheads a:hover{
+       background-color:rgb(125, 174, 93) ;
+        color: black;
+        cursor: pointer;
+        border-radius: 30px;
+
+       
+
+    }
+    button:hover{
+        background-color:rgb(138, 174, 113);
+        color: black;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+    .container{
+        
+        position: absolute;
+        
+        
+    }
+    h1{
+       text-align: center;
+        margin-left: 350px;
+        margin-top: 5px;
+        background-color: beige;
+       
+        top: 0;
+    }
+   
+   
+    
+</style>
+<body>
+    <nav>
+        <div class="upheads">
+
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contacts</a>
+            <a href="">Emails</a>
+            <a href="">More Info</a>
+        </div>
+        <div class="sideheads">
+            <button>Sign Up</button>
+            <button>Log In</button>
+        </div>
+
+    </nav>
+    <div class="sidebar">
+         <a href="">Accounts</a>
+            <a href="">Search</a>
+            <a href="">Exams</a>
+            <a href="">Results</a>
+            <a href="">Registration</a>
+            <button>Submit</button>
+    </div>
+    <div class="container">
+
+        <h1>WELCOME TO CSS TUTORIALS!!</h1>
+    </div>
+    <div class="black-box">I am a Black Box..</div>
+    <div class="gray-box">I am a Gray Box </div>
+    <div class="green-box">I am a Green Box..</div>
+</body>
+</html>

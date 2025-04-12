@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="navigation d-flex flex-row">
+            <div class="logo ms-5">
+
+                <img src="logo.jpg" width="60" height="60">
+            </div>
+
+
+            <ul class="navbar-nav d-flex flex-row justify-content-start mt-3 ms-3">
+                <li class="nav-item px-2">
+                    <a href="men.html" class="nav-link text-dark" onmouseover="showhome(0)">MEN</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="women.html" class="nav-link text-dark" onmouseover="showhome(1)">WOMEN</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="kids.html" class="nav-link text-dark" onmouseover="showhome(2)">KIDS</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="living.html" class="nav-link text-dark" onmouseover="showhome(3)">HOME &
+                        LIVING</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="beauty.html" class="nav-link text-dark" onmouseover="showhome(4)">BEAUTY</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="studio.html" class="nav-link text-dark" onmouseover="showhome(5)">STUDIO</a>
+                </li>
+                <li class="nav-item tool">
+                    <a href="" class="nav-link text-danger">NEW</a>
+                </li>
+                <li>
+                    <a class="dash-0 hidden" id="dash-0"></a>
+                </li>
+                <li>
+                    <a class="dash-1 hidden" id="dash-1"></a>
+                </li>
+
+                <li>
+                    <a class="dash-2 hidden" id="dash-2"></a>
+                </li>
+                <li>
+                    <a class="dash-3 hidden" id="dash-3"></a>
+                </li>
+                <li>
+                    <a class="dash-4 hidden" id="dash-4"></a>
+                </li>
+                <li>
+                    <a class="dash-5 hidden" id="dash-5"></a>
+                </li>
+
+
+            </ul>
+
+            <div class="searchbar d-flex flex-row">
+                <div class="search ps-2">
+                    <img src="search.png" alt="" width="20" height="20">
+                </div>
+                <span class="search-content">Search for products, brands and more</span>
+
+            </div>
+        </div>
+        <div class="sidebars d-flex">
+            <div onmouseover="showhome(6)" class="profie d-flex flex-column px-3">
+                <img src="profile.png" width="24" height="22" alt="">
+                <span>Profile</span>
+            </div>
+            <div class="fav d-flex flex-column px-3">
+                <img src="fav.png" width="24" height="22" alt="">
+                <span>Wishlist</span>
+            </div>
+            <div class="shop d-flex flex-column px-3">
+                <img src="shopping.png" width="24" height="22" alt="">
+                <span>Bag</span>
+            </div>
+        </div>
+    </nav>
+    <div class="men-press d-flex hidden" id="content-0" onmouseleave="hidehome(0)">
+        <div class="grid-1">
+
+            <div class="topwear">
+                <h6 style=" font-size: 13px; font-weight: 700; color:rgb(248, 72, 116);">Topwear</h6>
+                <div class="row">
+                    <div class="col"> T-Shirts</div>
+                </div>
+                <div class="row">
+                    <div class="col"> Casual Shirts </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Formal Shirts </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Sweatshirts </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Jackets </div>
+                </div>
+                <div class="row">
+                    <div class="col">Blazers & Coats </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Suits </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Rain Jackets</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="Indian">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Indian & Festive Wear</h6>
+                <div class="row">
+                    <div class="col">Kurtas & Kurta Sets</div>
+                </div>
+                <div class="row">
+                    <dic class="col">Sherwanis</dic>
+                </div>
+                <div class="row">
+                    <div class="col">Nehru Jackets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Dhotis</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="grid-2">
+            <div class="Bottomwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Bottomwear</h6>
+                <div class="row">
+                    <div class="col">Jeans</div>
+                </div>
+                <div class="row">
+                    <div class="col">Casual Trousers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Formal Trousers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shorts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Track Pants & Joggers</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="Innerwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Innerwear & Sleepwear</h6>
+                <div class="row">
+                    <div class="col">Briefs & Trunks</div>
+                </div>
+                <div class="row">
+                    <div class="col">Boxers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Vests</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sleepwear & Loungewear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Thermals</div>
+                </div>
+
+                <hr>
+
+                <div class="plus">
+                    <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Plus Size</h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-3">
+            <div class="Footwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Footwear</h6>
+                <div class="row">
+                    <div class="col">Casual Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sports Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Formal Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sneakers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sandals & Floaters</div>
+                </div>
+                <div class="row">
+                    <div class="col">Flip Flops</div>
+                </div>
+                <div class="row">
+                    <div class="col">Socks</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="Personal">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Personal Care &
+                    Grooming</h6>
+            </div>
+            <div class="goggles">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Sunglasses &
+                    Frames</h6>
+            </div>
+            <div class="watch">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Watches</h6>
+            </div>
+        </div>
+        <div class="grid-4">
+            <div class="sports">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Sports & Active Wear</h6>
+                <div class="row">
+                    <div class="col">Sports Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col"> Sports Sandals</div>
+                </div>
+                <div class="row">
+                    <div class="col"> Active T-Shirts </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        Track Pants & Shorts
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Tracksuits </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Jackets & Sweatshirts </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Sports & Accesories </div>
+                </div>
+                <div class="row">
+                    <div class="col">Swimwear</div>
+                </div>
+
+
+
+            </div>
+            <hr>
+            <div class="gadgets">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Gadgets</h6>
+                <div class="row">
+                    <div class="col">Smart Wearables</div>
+                </div>
+                <div class="row">
+                    <div class="col">Fitness Gadgets </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Headphones </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Speakers</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-5">
+            <div class="fashion">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Fashion Accessories</h6>
+                <div class="row">
+                    <div class="col">Wallets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Belts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Perfumes & Body Mists </div>
+                </div>
+                <div class="row">
+                    <div class="col">Trimmers </div>
+                </div>
+                <div class="row">
+                    <div class="col">Deodrants </div>
+                </div>
+                <div class="row">
+                    <div class="col">Ties, Culfinks & Pocket Squares </div>
+                </div>
+                <div class="row">
+                    <div class="col">Accessory Gift Sets </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Caps & Hats</div>
+                </div>
+                <div class="row">
+                    <div class="col"> Mufflers Scaves abd Gloves</div>
+                </div>
+                <div class="row">
+                    <div class="col"> Ring & Wristwear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Helmets</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="bags">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Bags & Backpacks
+                </h6>
+
+            </div>
+            <div class="luggage">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(248, 72, 116);">Luggages &
+                    Trolleys</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="men-press d-flex hidden" id="content-1" onmouseleave="hidehome(1)">
+        <div class="grid-1">
+
+            <div class="topwear">
+                <h6 style=" font-size: 13px; font-weight: 700; color:rgb(236, 71, 206)">Indian & Fusion Wear</h6>
+                <div class="row">
+                    <div class="col">Kurtas and Suits</div>
+                </div>
+                <div class="row">
+                    <div class="col">Kurtis, Tunics & Tops </div>
+                </div>
+                <div class="row">
+                    <div class="col">Sarees</div>
+                </div>
+                <div class="row">
+                    <div class="col">Ethnic Wear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Leggings, Salwar & Churidars</div>
+                </div>
+                <div class="row">
+                    <div class="col">Skirts & Plazzos </div>
+                </div>
+                <div class="row">
+                    <div class="col">Lehanga Choli </div>
+                </div>
+                <div class="row">
+                    <div class="col">Dupatta & Shawls</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jackets</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="Indian">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Belt, Scarves &
+                    More</h6>
+
+            </div>
+            <div class="Watches">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Watches &
+                    Wearables</h6>
+
+            </div>
+
+        </div>
+        <div class="grid-2">
+            <div class="Bottomwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Western Wear</h6>
+                <div class="row">
+                    <div class="col">Dresses</div>
+                </div>
+                <div class="row">
+                    <div class="col">Tops</div>
+                </div>
+                <div class="row">
+                    <div class="col">Tshirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jeans</div>
+                </div>
+                <div class="row">
+                    <div class="col">Trousers & Capris</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shorts & Skirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Coords</div>
+                </div>
+                <div class="row">
+                    <div class="col">Playsuits</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jumpsuits</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shrugs</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sweaters & Sweatshirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shorts & Skirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jackets & Coats</div>
+                </div>
+                <div class="row">
+                    <div class="col">Blazers & Waistcoats</div>
+                </div>
+            </div>
+
+            <hr>
+
+
+
+
+
+            <div class="plus">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Plus Size</h6>
+            </div>
+
+        </div>
+        <div class="grid-3">
+            <div class="maternity">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Maternity</h6>
+            </div>
+            <div class="Goggles">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Sunglasses &
+                    Frames</h6>
+            </div>
+            <div class="Footwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Footwear</h6>
+                <div class="row">
+                    <div class="col">Casual Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Flats</div>
+                </div>
+                <div class="row">
+                    <div class="col">Heels</div>
+                </div>
+                <div class="row">
+                    <div class="col">Boots</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sports Shoes & Floaters</div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="sports">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Sports & Active Wear</h6>
+                <div class="row">
+                    <div class="col">Clothing</div>
+                </div>
+                <div class="row">
+                    <div class="col">Footwear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sports Accessories</div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        Sports Equipment
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="grid-4">
+
+            <div class="Lingere">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Lingere & Sleepwear</h6>
+                <div class="row">
+                    <div class="col">Bra</div>
+                </div>
+                <div class="row">
+                    <div class="col">Briefs</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shapewear </div>
+                </div>
+                <div class="row">
+                    <div class="col">Sleepwear & loungewear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Swimwear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Camisols & Thermals</div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="Beauty">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Beauty & Personal
+                    Care</h6>
+                <div class="row">
+                    <div class="col">Makeup</div>
+                </div>
+                <div class="row">
+                    <div class="col">Skincare</div>
+                </div>
+                <div class="row">
+                    <div class="col">Premium Beauty</div>
+                </div>
+                <div class="row">
+                    <div class="col">Lipstick</div>
+                </div>
+                <div class="row">
+                    <div class="col">Fragrances</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-5">
+            <div class="fashion">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Gadgets</h6>
+                <div class="row">
+                    <div class="col">Smart Wearables</div>
+                </div>
+                <div class="row">
+                    <div class="col">Fitness Gadgets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Perfumes & Body Mists </div>
+                </div>
+                <div class="row">
+                    <div class="col">Headphones & Speakers </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="bags">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Jewellery
+                </h6>
+                <div class="row">
+                    <div class="col">Fashion Jewellery</div>
+                </div>
+                <div class="row">
+                    <div class="col">Fine Jewellery</div>
+                </div>
+                <div class="row">
+                    <div class="col">Earings </div>
+                </div>
+            </div>
+            <hr>
+            <div class="luggage">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Bagpacks</h6>
+            </div>
+            <div class="luggage">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Handbags,
+                    Bags &
+                    Wallets</h6>
+            </div>
+            <div class="luggage">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(236, 71, 206)">Luggages &
+                    Trolleys</h6>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="men-press d-flex hidden" id="content-2" onmouseleave="hidehome(2)">
+        <div class="grid-1">
+
+            <div class="topwear">
+                <h6 style=" font-size: 13px; font-weight: 700; color:rgb(243, 74, 27)">Boys Clothing</h6>
+                <div class="row">
+                    <div class="col">Tshirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shorts </div>
+                </div>
+                <div class="row">
+                    <div class="col">Shirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jeans</div>
+                </div>
+                <div class="row">
+                    <div class="col">Trousers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Clothing Sets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Ethnic Wear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Track Pants & Pyjamas</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jackets, Sweaters & Sweatshirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Partywear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Innerwear & Thermals</div>
+                </div>
+                <div class="row">
+                    <div class="col">Nightwear & Lounge</div>
+                </div>
+                <div class="row">
+                    <div class="col">Value Packs</div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="Bottomwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Girls Clothing</h6>
+                <div class="row">
+                    <div class="col">Dresses</div>
+                </div>
+                <div class="row">
+                    <div class="col">Tops</div>
+                </div>
+                <div class="row">
+                    <div class="col">Tshirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jeans</div>
+                </div>
+                <div class="row">
+                    <div class="col">Trousers & Capris</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shorts & Skirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Coords</div>
+                </div>
+                <div class="row">
+                    <div class="col">Playsuits</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jumpsuits</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shrugs</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sweaters & Sweatshirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shorts & Skirts</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jackets & Coats</div>
+                </div>
+                <div class="row">
+                    <div class="col">Blazers & Waistcoats</div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="grid-3">
+
+            <div class="Footwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Footwear</h6>
+                <div class="row">
+                    <div class="col">Casual Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Flats</div>
+                </div>
+                <div class="row">
+                    <div class="col">School Shoes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Boots</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sports Shoes & Floaters</div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="sports">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Toys & Games</h6>
+                <div class="row">
+                    <div class="col">Learning & Development</div>
+                </div>
+                <div class="row">
+                    <div class="col">Activity toys</div>
+                </div>
+                <div class="row">
+                    <div class="col">Soft toys</div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        Action Figure / Playset
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="grid-4">
+
+            <div class="Lingere">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Infants</h6>
+                <div class="row">
+                    <div class="col">Bodysuits</div>
+                </div>
+                <div class="row">
+                    <div class="col">Romper & Sleepsuits </div>
+                </div>
+                <div class="row">
+                    <div class="col">Clothing Sets </div>
+                </div>
+                <div class="row">
+                    <div class="col">Tshirts & Tops</div>
+                </div>
+                <div class="row">
+                    <div class="col">Dresses</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bottomear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Winterwear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Innerwear & Sleepwear</div>
+                </div>
+                <div class="row">
+                    <div class="col">Infant Care</div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="Beauty">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Home & Bath
+                </h6>
+
+
+            </div>
+            <div class="Beauty">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Personal Care
+                </h6>
+
+
+            </div>
+        </div>
+        <div class="grid-5">
+            <div class="fashion">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">Kids Accessories</h6>
+                <div class="row">
+                    <div class="col">Bags & Backpacks</div>
+                </div>
+                <div class="row">
+                    <div class="col">Watches</div>
+                </div>
+                <div class="row">
+                    <div class="col">Jewellery & Hair Accessory</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sunglasses </div>
+                </div>
+                <div class="row">
+                    <div class="col">Masks & Protective Gears </div>
+                </div>
+                <div class="row">
+                    <div class="col">Caps & Hats </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="bags">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(243, 74, 27)">brands
+                </h6>
+                <div class="row">
+                    <div class="col">H&M</div>
+                </div>
+                <div class="row">
+                    <div class="col">Max Kids</div>
+                </div>
+                <div class="row">
+                    <div class="col">Pantaloons </div>
+                </div>
+                <div class="row">
+                    <div class="col">United Nation of Belton Kids </div>
+                </div>
+                <div class="row">
+                    <div class="col">US Polo Ass. kids </div>
+                </div>
+                <div class="row">
+                    <div class="col">Mothercare </div>
+                </div>
+                <div class="row">
+                    <div class="col">HRX </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="men-press d-flex hidden" id="content-3" onmouseleave="hidehome(3)">
+        <div class="grid-1">
+
+            <div class="topwear">
+                <h6 style=" font-size: 13px; font-weight: 700; color:rgb(211, 211, 8)">Bed Linen & Furnishing</h6>
+                <div class="row">
+                    <div class="col">Bed Runners</div>
+                </div>
+                <div class="row">
+                    <div class="col">Matress Protectors </div>
+                </div>
+                <div class="row">
+                    <div class="col">Bedsheets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bedding Sets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Blankets, quilts & Dohars</div>
+                </div>
+                <div class="row">
+                    <div class="col">Pillow & Pillow Covers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bed Covers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Diwan Sets</div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Chair Pads & Covers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sofa Covers</div>
+                </div>
+
+                <hr>
+
+                <div class="floor">
+                    <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Flooring</h6>
+                    <div class="row">
+                        <div class="col">Floor Runners</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Carpets</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Floor Mats & Dhurries</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Door Mats</div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="Bottomwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Bath</h6>
+                <div class="row">
+                    <div class="col">Bath Towels</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hand & Face Towels</div>
+                </div>
+                <div class="row">
+                    <div class="col">Beach Towels</div>
+                </div>
+                <div class="row">
+                    <div class="col">Towel Sets</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bath Rugs</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bath Robes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bathroom Accessories</div>
+                </div>
+                <div class="row">
+                    <div class="col">Shower Curtains</div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="lamps">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Lamps & Lighting
+                </h6>
+                <div class="row">
+                    <div class="col">Floor Lamps</div>
+                </div>
+                <div class="row">
+                    <div class="col">Ceiling Lamps</div>
+                </div>
+                <div class="row">
+                    <div class="col">Table Lamps</div>
+                </div>
+                <div class="row">
+                    <div class="col">Wall Lamps</div>
+                </div>
+                <div class="row">
+                    <div class="col">Outdoor Lamps</div>
+                </div>
+                <div class="row">
+                    <div class="col">String Lights</div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="grid-3">
+
+            <div class="Footwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Home Decor</h6>
+                <div class="row">
+                    <div class="col">Plants & Planters</div>
+                </div>
+                <div class="row">
+                    <div class="col">Aromas & Candles</div>
+                </div>
+                <div class="row">
+                    <div class="col">Clocks</div>
+                </div>
+                <div class="row">
+                    <div class="col">Mirrors</div>
+                </div>
+                <div class="row">
+                    <div class="col">Wall Decor</div>
+                </div>
+                <div class="row">
+                    <div class="col">Wall Shelves</div>
+                </div>
+                <div class="row">
+                    <div class="col">Fountains</div>
+                </div>
+                <div class="row">
+                    <div class="col">Show Pieces & Vases</div>
+                </div>
+                <div class="row">
+                    <div class="col">Ottoman</div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="cushion">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Cushions & Cushions
+                    Covers</h6>
+            </div>
+
+            <div class="curtains">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Curtains</h6>
+            </div>
+
+
+        </div>
+        <div class="grid-4">
+
+            <div class="Furniture">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Furniture</h6>
+            </div>
+            <div class="home-sets">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Home Gift Sets</h6>
+            </div>
+            <div class="Lingere">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Kitchen & Table</h6>
+                <div class="row">
+                    <div class="col">Table Runners</div>
+                </div>
+                <div class="row">
+                    <div class="col">Dinnerware & Serveware</div>
+                </div>
+                <div class="row">
+                    <div class="col">Cups & Mugs</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bakeware & Cookware</div>
+                </div>
+                <div class="row">
+                    <div class="col">Kitchen Storage & Tools</div>
+                </div>
+                <div class="row">
+                    <div class="col">Bar & Drinkware</div>
+                </div>
+                <div class="row">
+                    <div class="col">Table Covers & Furnishings</div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <div class="grid-5">
+            <div class="fashion">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(211, 211, 8)">Storage</h6>
+                <div class="row">
+                    <div class="col">Bins</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hangers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Organisers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hooks & Holders</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">Laundary Bags</div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="men-press d-flex hidden" id="content-4" onmouseleave="hidehome(4)">
+
+        <div class="grid-1">
+
+            <div class="topwear">
+                <h6 style=" font-size: 13px; font-weight: 700; color:rgb(88, 166, 222)">Makeup</h6>
+                <div class="row">
+                    <div class="col">Lipstick</div>
+                </div>
+                <div class="row">
+                    <div class="col">Lip Gloss</div>
+                </div>
+                <div class="row">
+                    <div class="col">Lip Liner</div>
+                </div>
+                <div class="row">
+                    <div class="col">Mascara</div>
+                </div>
+                <div class="row">
+                    <div class="col">Eyeliner</div>
+                </div>
+                <div class="row">
+                    <div class="col">Kajal</div>
+                </div>
+                <div class="row">
+                    <div class="col">Eye Shadow</div>
+                </div>
+                <div class="row">
+                    <div class="col">Foundation</div>
+                </div>
+                <div class="row">
+                    <div class="col">Primer</div>
+                </div>
+                <div class="row">
+                    <div class="col">Concealar</div>
+                </div>
+                <div class="row">
+                    <div class="col">Compact</div>
+                </div>
+                <div class="row">
+                    <div class="col">Nail Polish</div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="Bottomwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Skincare, Bath & Body</h6>
+                <div class="row">
+                    <div class="col">Face Moisturizers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Cleansers</div>
+                </div>
+                <div class="row">
+                    <div class="col">Masks & Peel</div>
+                </div>
+                <div class="row">
+                    <div class="col">Sunscreen</div>
+                </div>
+                <div class="row">
+                    <div class="col">Serum</div>
+                </div>
+                <div class="row">
+                    <div class="col">Face Wash</div>
+                </div>
+                <div class="row">
+                    <div class="col">Eye Cream</div>
+                </div>
+                <div class="row">
+                    <div class="col">Lipbalm</div>
+                </div>
+                <div class="row">
+                    <div class="col">Body Lotion</div>
+                </div>
+                <div class="row">
+                    <div class="col">Body Wash</div>
+                </div>
+                <div class="row">
+                    <div class="col">Body Scrub</div>
+                </div>
+                <div class="row">
+                    <div class="col">Handcream</div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="baby">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Baby Care</h6>
+            </div>
+            <div class="mask">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Masks</h6>
+            </div>
+
+
+        </div>
+        <div class="grid-3">
+
+            <div class="Footwear">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Haicare</h6>
+                <div class="row">
+                    <div class="col">Shampoo</div>
+                </div>
+                <div class="row">
+                    <div class="col">Conditioner</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Cream</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair oil</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Gel</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Color</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Serum</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Accessory</div>
+                </div>
+
+
+            </div>
+
+            <hr>
+
+            <div class="cushion">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Fragrances</h6>
+                <div class="row">
+                    <div class="col">Perfumes</div>
+                </div>
+                <div class="row">
+                    <div class="col">Deodarants</div>
+                </div>
+                <div class="row">
+                    <div class="col">Body Mist</div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="grid-4">
+
+            <div class="Furniture">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Appliances</h6>
+                <div class="row">
+                    <div class="col">
+                        Hair Straightner
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Dryer</div>
+                </div>
+                <div class="row">
+                    <div class="col">Epliator</div>
+                </div>
+            </div>
+
+            <hr>
+
+
+            <div class="grooming">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Men's Grooming</h6>
+                <div class="row">
+                    <div class="col">
+                        Trimmers
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">Beard Oil</div>
+                </div>
+                <div class="row">
+                    <div class="col">Hair Wax</div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="grooming">
+                <h6 class="my-3" style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Beauty Gift &
+                    Makeup Sets</h6>
+                <div class="row">
+                    <div class="col">
+                        Beauty Gift
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">Makeup Kit</div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="beauty">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Premium Beauty</h6>
+            </div>
+
+            <div class="beauty">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Wellness Hygiene</h6>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="grid-5">
+            <div class="fashion">
+                <h6 style=" font-size: 13px;  font-weight: 700; color:rgb(88, 166, 222)">Top Brands</h6>
+                <div class="row">
+                    <div class="col">Lakme</div>
+                </div>
+                <div class="row">
+                    <div class="col">Maybelline</div>
+                </div>
+                <div class="row">
+                    <div class="col">Loreal</div>
+                </div>
+                <div class="row">
+                    <div class="col">Philips</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">Bath & Body Works</div>
+            </div>
+            <div class="row">
+                <div class="col">The Bath Shop</div>
+            </div>
+            <div class="row">
+                <div class="col">Biotique</div>
+            </div>
+            <div class="row">
+                <div class="col">Bath & Body Works</div>
+            </div>
+            <div class="row">
+                <div class="col">MamaEarth</div>
+            </div>
+            <div class="row">
+                <div class="col">Macaffiene</div>
+            </div>
+            <div class="row">
+                <div class="col">Nivea</div>
+            </div>
+            <div class="row">
+                <div class="col">Lotus Herbals</div>
+            </div>
+            <div class="row">
+                <div class="col">LOreal Professional</div>
+            </div>
+            <div class="row">
+                <div class="col">M.A.C</div>
+            </div>
+            <div class="row">
+                <div class="col">Forest Essentials</div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="studio-press hidden" id="content-5" onmouseleave="hidehome(5)" style=" position:absolute; font-size: 14px; width: 45%; height: 35vmax; background-color: white; margin-left: 27vmax;
+    ">
+        <div class="studio d-flex flex-column justify-content-center align-items-center" style="text-align: center;">
+            <img class="my-2" width="100px" height="40px" src="studio.png" alt="">
+            <div class="text-secondary" style="font-size: 16px;">Your Daily Inspiration For Everything Fashion</div>
+        </div>
+        <div class="mid">
+
+            <img class="mt-4" width="100%" height="280px" src="studio-2.jpg" alt="">
+        </div>
+        <div class="explore d-flex mt-2 align-items-center justify-content-center" style="margin-left:16vmax; border: 1px solid rgb(216, 214, 214); height: 40px;
+    width: 192px;
+    padding: 10px 22px; gap:5px;">
+            <div style="font-weight: 600;">EXPLORE STUDIO</div>
+            <img style="margin-top: 1px;" src="arrow-right.png" height="15px" width="20px" alt="">
+        </div>
+
+    </div>
+
+    <div class="profile-press hidden" id="content-6" onmouseleave="hidehome(6)">
+        <div class="d-flex flex-column">
+            <h6>WELCOME</h6>
+            <span style=" color: rgb(168, 165, 165);">To access account and manage orders</span>
+            <button type="button" class="btn fw-bold btn-light border mt-2 text-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            LOGIN/SIGNUP
+        </button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img height="80px" width="80px" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/9/21/8fca3ae9-d245-443b-a142-8d568247794c1663700243878-offer-banner-300-600x240-code-_-MYNTRA400.jpg" alt="">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div><span>Login</span> or <span>Signup</span></div>
+          <input type="number" placeholder="+91 | Mobile Number*">
+          <div>By Continuing,I agree to the <span>Terms of Use</span> & <span>Privacy Policy</span></div>
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger text-light" data-bs-dismiss="modal">Continue</button>
+          <div>Have Trouble Logging in? <span>Get help</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+        <hr>
+        <div class="grid">
+            <div class="row">
+                <div class="col">Orders</div>
+            </div>
+            <div class="row">
+                <div class="col">Wishlist</div>
+            </div>
+            <div class="row">
+                <div class="col">Gift Cards</div>
+            </div>
+            <div class="row">
+                <div class="col">Contact Us</div>
+            </div>
+            <div class=" d-flex flex-row" style="gap: 4px;  color: rgb(168, 165, 165);">
+                <div>Myntra Insider</div>
+                <div class="px-2"
+                    style=" border-radius: 2px; font-style: italic; background-color: rgb(244, 70, 96); color: white; text-align:center;  ">
+                    New</div>
+            </div>
+        </div>
+        <hr>
+        <div class="grid mb-4">
+            <div class="row">
+                <div class="col">Myntra Credit</div>
+            </div>
+            <div class="row">
+                <div class="col">Coupons</div>
+            </div>
+            <div class="row">
+                <div class="col">Saved Cards</div>
+            </div>
+            <div class="row">
+                <div class="col">Saved VPA</div>
+            </div>
+            <div class="row">
+                <div class="col">Saved Addresses</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg" id="section">
+        <img class="bg-img" id="background"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7d001160055441.5a39f903aa217.jpg" alt="">
+
+        <img class="bg-tag mt-3"
+            src="https://bandhanbank.com/sites/default/files/2023-03/Bandhan_Myntra_Offer_Banner_05.jpg" alt="">
+    </section>
+
+    <div class="bd" id="category">
+        <h1>SHOP BY CATEGORY</h1>
+        <div class="cards">
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29266688/2024/4/30/e2266eda-6e0e-41fe-b7b3-d155bad600cf1714469626767PinkFloralEmbroideredGeorgetteMaxiDressWithBeautifullJacquar1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Ethnic Wear
+                    </div>
+                    <div class="card-text">
+                        <span>50-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/9/25/008a9a06-adbe-487c-8583-9a9a470fdbb31569400744206-1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Casual Wear
+                    </div>
+                    <div class="card-text">
+                        <span>40-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/28297406/2024/4/2/5bf4f132-e26c-4157-9869-d44d1eddc4721712048303811-HRX-by-Hrithik-Roshan-Men-Tracksuits-3351712048303127-1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Men's Activewear
+                    </div>
+                    <div class="card-text">
+                        <span>30-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22371342/2023/7/1/29878c99-b4ce-4299-8ce3-4c0c8049db281688194391223-CHKOKKO-Women-Gym-Wear-Sports-Fitness-Regular-Fit-Track-Pant-14.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Women's Activewear
+                    </div>
+                    <div class="card-text">
+                        <span>30-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/productimage/2020/7/31/0fa3cea4-f834-4969-95f2-95285952e1e91596154317638-1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Western Wear
+                    </div>
+                    <div class="card-text">
+                        <span>40-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxOCAQmBSUVsq9iAsKoA1Dn9mzuKcEz38EA&s"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Sports Wear
+                    </div>
+                    <div class="card-text">
+                        <span>30-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/24320598/2023/8/3/a5959a4d-b35e-4e0c-b56a-a106d7584d941691053614926Crinkledloungeweartrousers1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Loungewear
+                    </div>
+                    <div class="card-text">
+                        <span>30-60% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKQb1dv5o1ydi0x177uGMubdiJdbImAPQHog&s"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Watches
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Grooming
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 60% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://mma.prnewswire.com/media/1832317/Myntra.jpg?p=twitter" alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Beauty & Makeup
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 60% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQikTivFK3RpM_Ue4vNkOCrvsKs5WZ81WQqpw&s"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Kids Wear
+                    </div>
+                    <div class="card-text">
+                        <span>50-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/29553912/2024/5/17/5f90bc0f-c248-4bff-8a88-54128a77c4a61715927218769HRXbyHrithikRoshanUnisexTexturedSneakers1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Men's Footwear
+                    </div>
+                    <div class="card-text">
+                        <span>40-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/30217065/2024/7/18/209c099a-a809-4a8d-a857-ca907f1485531721297371390-The-Roadster-Lifestyle-Co-Women-Pointed-Toe-Block-Heels-2172-7.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Women's Footwear
+                    </div>
+                    <div class="card-text">
+                        <span>30-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/30022228/2024/6/22/95200217-15b4-4959-9e36-30365246ad191719072917894AccessoryGiftSet1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Bags, Belts & Wallets
+                    </div>
+                    <div class="card-text">
+                        <span>40-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Office Wear
+                    </div>
+                    <div class="card-text">
+                        <span>40-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18591206/2022/7/22/e2a1d633-a112-4ded-bf68-85462a46ded11658479914484-Anouk-Men-Kurtas-1971658479914061-1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Men's Ethnic Wear
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 60% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2025/JANUARY/26/cl16r9e5_0e2cf31bfc6346cbab0b0b2c9f1904b0.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Home Decor
+                    </div>
+                    <div class="card-text">
+                        <span>40-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19925768/2024/8/17/f96450c1-170b-4b22-bf4d-d5df021f7da81723875815818-MIRAGGIO-Tote-Bag-With-Detachable-Sling-Strap-55917238758152-1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Handbags
+                    </div>
+                    <div class="card-text">
+                        <span>40-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/30948614/2024/11/14/c06dda40-3fcc-4447-9ace-c9a8f484e40a1731578424783-BOULT-AUDIO-Vortex-Bluetooth-True-Wireless-Headphones---Jet--1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Headphones & Speakers
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/24947014/2023/9/13/3e4a4257-1993-4bcd-ab21-6dc7f820684a1694587386887Gold-TonedNecklaceSetwithGildedPendantGoldenBeadsandWhitePea5.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Jewellery
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/24203732/2023/7/27/2a3249b9-8ea2-4fc1-b88b-18f7912e19b81690399948203Dresses1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Size Inclusive Styles
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 60% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://blog.myntra.com/wp-content/uploads/2020/06/EORS-fashion-essentials.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Inclusive Styles
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 60% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://static.toiimg.com/thumb/msid-88436709,width-1280,height-720,imgsize-50994,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Watches & Wearables
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-YrULyisjKiCqgWqdw072-IpvE_qfshb8xA&s"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Workwear
+                    </div>
+                    <div class="card-text">
+                        <span>40-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/28332758/2024/3/18/8201e749-6287-454c-9d01-9a8602c4b57e1710761977973RoundBlackFraneUnisexOversizedBlueLightBlockingComputerGamin1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Eyewear
+                    </div>
+                    <div class="card-text">
+                        <span>Upto 80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/31997924/2024/12/17/606e66d8-3527-4c59-972e-93a37af939761734437948820KEOSAPrintFitFlareMidiDress1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Casual Styles
+                    </div>
+                    <div class="card-text">
+                        <span>40-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/10293735/2019/8/16/b09184e0-cee7-4b7c-94e0-b2677880d7a21565955120684-Wildcraft-Women-Blue-Graphic-Backpack-301565955120364-9.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Bags & Backpacks
+                    </div>
+                    <div class="card-text">
+                        <span>30-80% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/OCTOBER/16/4wIQf4II_65d50d3060da4c2697b41942a3be3e34.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Trolley & Luggage Bags
+                    </div>
+                    <div class="card-text">
+                        <span>30-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/21036138/2022/12/2/e927c61a-a877-47c9-b4ec-dd3d64967e201669983112354GingerbyLifestyleWomenBeigeSliders1.jpg"
+                    alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        Flip-Flops
+                    </div>
+                    <div class="card-text">
+                        <span>30-70% OFF</span><br>
+                        Shop Now
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-tag container mb-5">
+        <img src="https://cdn.flipshope.com/blog/wp-content/uploads/2023/05/Myntra-upcoming-sale-800x267.jpg" alt=""
+            height="180px" width="95%">
+    </div>
+    <div class="grid-area d-flex flex-row mt-5" style="font-size: 13px;">
+        <div class="grid-1" style="color:gray; font-size:15px">
+            <h6 class="mb-4" style="font-size: 12px; font-weight: 700; color:black;">ONLINE SHOPPING</h6>
+            <div class="row">
+                <div class="col"> Men </div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Women </div>
+            </div>
+            <div class="row">
+
+                <div class="col">Kids</div>
+            </div>
+            <div class="row">
+
+                <div class="col">Home & Living</div>
+            </div>
+            <div class="row">
+
+                <div class="col">Beauty</div>
+            </div>
+            <div class="row">
+
+                <div class="col">Gift cards</div>
+            </div>
+            <div class="row">
+
+                <div class="col">Myntra Insider</div>
+            </div>
+
+
+        </div>
+        <div class="grid-2" style="color:gray; font-size:15px">
+            <h6 class="mb-4" style="font-size: 12px; font-weight: 700;  color:black;">CUSTOMER POLICIES</h6>
+            <div class="row">
+                <div class="col">Contact Us</div>
+            </div>
+            <div class="row">
+
+                <div class="col"> FAQ</div>
+            </div>
+            <div class="row">
+
+                <div class="col">T&C</div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Terms Of Use</div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Track Orders</div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Shipping</div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Cancellation</div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Return </div>
+            </div>
+            <div class="row">
+
+                <div class="col"> Privacy Policy </div>
+            </div>
+            <div class="row">
+
+                <div class="col">Grievance Redressal </div>
+            </div>
+
+
+
+        </div>
+        <div class="grid-3" style="color:gray; font-size:15px">
+            <h6 style="font-size: 12px; font-weight: 700;  color:black;">EXPERIENCE MYNTRA APP ON MOBILE</h6>
+            <div class="row my-4">
+                <div class="col-6">
+
+                    <img src="data:image/png;base64,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"
+                        alt="" height="40px" width="140px">
+                </div>
+                <div class="col-6">
+
+                    <img src="data:image/png;base64,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"
+                        alt="" height="40px" width="140px">
+                </div>
+
+            </div>
+            <div class="grid-3_1 mt-5" style="color:gray; font-size:15px">
+                <h6 style="font-size: 12px; font-weight: 700;  color:black;">KEEP IN TOUCH</h6>
+                <div class="icons">
+                    <img height="30px" width="35px"
+                        src="https://img.icons8.com/?size=100&id=59780&format=png&color=000000" alt="">
+                    <img height="30px" width="35px"
+                        src="https://img.icons8.com/?size=100&id=60014&format=png&color=000000" alt="">
+                    <img height="30px" width="35px"
+                        src="https://img.icons8.com/?size=100&id=85162&format=png&color=000000" alt="">
+                    <img height="30px" width="35px"
+                        src="https://img.icons8.com/?size=100&id=ZOFC5nSr215Y&format=png&color=000000" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="grid-4">
+            <div class="original d-flex mb-3">
+
+                <img height="40px" width="50px"
+                    src="https://img.icons8.com/?size=100&id=bRfuH1kbxvWa&format=png&color=000000" alt="">
+                <div class="ms-2 d-flex flex-wrap" style="font-size: 13px;"><span style="font-weight: 700;">100%
+                        ORIGINAL </span>guarantee for all products at myntra.com</div>
+            </div>
+            <div class="return d-flex mb-4 mx-1">
+
+                <img height="40px" width="50px" src="https://img.icons8.com/?size=100&id=7830&format=png&color=000000"
+                    alt="">
+                <div class="ms-2 d-flex flex-wrap" style="font-size: 13px;"><span style="font-weight: 700;">Return
+                        within 14days </span> of receiving your order.</div>
+            </div>
+
+
+        </div>
+        <div class="grid-5" style="color:gray; font-size: 15px">
+            <h6 class="mb-4" style="font-size: 12px; font-weight: 700; color:black;">USEFULL LINKS</h6>
+            <div class="row">
+
+                <div class="col">Blog</div>
+            </div>
+            <div class="row">
+                <div class="col">Careers</div>
+            </div>
+            <div class="row">
+
+                <div class="col">Site Map</div>
+            </div>
+            <div class="row">
+                <div class="col">Corporate</div>
+            </div>
+            <div class="row">
+                <div class="col">Whitehat</div>
+            </div>
+            <div class="row">
+                <div class="col">Cleartrip</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="margin-left: 84px; margin-right: 70px;">
+        <div class="popular-searches">
+            <div class="d-flex my-4" style="gap: 15px;">
+
+                <h6 style="font-size: 12px; font-weight: 600; color:black;">POPULAR SEARCHES</h6>
+                <hr style="width: 75vmax; margin-top: 7px; color: rgb(179, 175, 175);">
+            </div>
+            <span style="color:gray; font-size:15px">Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones |
+                Babydolls | Blazers For Men |
+                Handbags
+                | Ladies Watches |
+                Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack
+                Watches |
+                Kurtis | Nike | Smart
+                Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket | Shoes Forever 21 | Eye |
+                Makeup |
+                Photo Frames |
+                Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike
+                Shoes | Goggles | Bras |
+                Suit | Chinos Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees</span>
+        </div>
+        <div class="contacts d-flex mt-5" style="color:rgb(173, 171, 171); justify-content: space-between;">
+            <div>In case of any Concern, <span style="font-weight:700; color: rgb(89, 89, 244);">Contact Us</span></div>
+            <div>@ 2025 www.myntra.com.All rights reserved.</div>
+            <div>Flipkart Company</div>
+        </div>
+        <hr class="my-4" style="color: rgb(179, 175, 175);">
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function showhome(index) {
+            let test = document.getElementById(`content-${index}`);
+            let temp = document.getElementById(`dash-${index}`);
+            test.classList.remove('hidden');
+            temp.classList.remove('hidden');
+        }
+
+
+        function hidehome(index) {
+            let test = document.getElementById(`content-${index}`);
+            let temp = document.getElementById(`dash-${index}`);
+            test.classList.add('hidden');
+            temp.classList.add('hidden');
+        }
+        /*   let images = [
+               'url("https://th.bing.com/th/id/OIP.VxUuCIMmVjLrrW5kN8730wHaDt?w=297&h=175&c=7&r=0&o=5&dpr=1.5&pid=1.7")',
+               'url("https://th.bing.com/th/id/OIP.5o3wbSWPVhfcoaA1IIGlHwHaD4?w=339&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7")',
+               'url("https://th.bing.com/th/id/OIP.8ZlH5dRTcthFzJ11hO_hFgHaE9?rs=1&pid=ImgDetMain")'
+           ]
+   
+           let changeIndex = 0;
+           function changebgImage() {
+               let bg = document.getElementById("background");
+   
+               bg.style.backgroundImage = images[changeIndex];
+               changeIndex = [changeIndex + 1] % images.length;
+   
+           }
+   
+           setInterval(changebgImage, 1000);*/
+
+
+    </script>
+</body>
+
+</html>

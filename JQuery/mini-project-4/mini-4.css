@@ -1,0 +1,18 @@
+.box{
+    height: 120px;
+    width: 120px;
+   
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+.boxes, .box{
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.boxes{
+    position: absolute;
+    top: 200px;
+    left: 220px;
+}

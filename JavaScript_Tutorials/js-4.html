@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling..</title>
+</head>
+<body>
+    <h2>JS Try, Catch</h2>
+    <h4>Please Input a number between 5 and 10</h4>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+    <h2>JSON.Parse()</h2>
+    <p id="json"></p>
+    <h2>JSON.Stringify()</h2>
+    <p id="stringy"></p>
+    <h2>Object.assign()</h2>
+    <p id= "assign"></p>
+
+    <script>
+        function myFunction() {
+            const message = document.getElementById("p01");
+            message.innerHTML="";
+            let x = document.getElementById("demo").value;
+            try{
+
+                if(x.trim() == "") throw "empty";
+                if(isNaN(x)) throw "not a Number";
+                x = Number(x);
+                if(x < 5) throw "too Low";
+                if(x > 10) throw "too High";
+            }
+            catch(err){
+               message.innerHTML="Input is " +err;
+            }
+        }
+
+        const text='{"firstName": "John", "lastName": "Doe", "Age": 24, "City": "Ajmer"}'
+        const js=JSON.parse(text);
+        document.getElementById("json").innerHTML="My Name is " +js.firstName+ " " +js.lastName +" and my age is " +js.Age+ " and i belong to " +js.City;
+
+         const txt={firstName: "John", lastName: "Doe", Age: 24, City: "Ajmer"};
+        const stingy = JSON.stringify(txt);
+        document.getElementById("stringy").innerHTML=stingy;
+
+        const temp = {
+            firstName: "Harry",
+            lastName: "Potter",
+            age: 34,
+            eyeColor: "blue"
+        };
+        const nug = {
+        firstName: "Peter",
+            Age: 43
+        };
+
+        Object.assign(temp, nug);
+        let person=Object.entries(temp);
+        document.getElementById("assign").innerHTML=person;
+    </script>
+</body>
+</html>

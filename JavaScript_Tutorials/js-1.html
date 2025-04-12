@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <h1>JavaScript Tutorials.</h1>
+    <p id="demo" style="background-color: black; color: white; padding:20px; width:30%;">Where to learn JavaScript
+        from??</p>
+        <button type="button" onclick="myfunction()">Click Me!</button>
+        
+        <h1>Adding Method to an Object..</h1>
+        <p id="disp"></p>
+        <p id="fruit"></p>
+
+
+        <script>
+            function myfunction() {
+                document.getElementById('demo').innerHTML = "Welcome to javatpoint tutorials for Javascript..."
+                document.getElementById('demo').style.backgroundColor = "green";
+    
+            }
+    
+            const person = {
+                firstName: "John",
+                lastName: "David",
+                Age: 21,
+            };
+            person.name = function() {
+                return (this.firstName + " " + this.lastName).toUpperCase();
+            };
+    
+    
+            document.getElementById('disp').innerHTML = "My Father is " + person.name();
+
+            const fruits={bananas:300, apple:100, mangoes:200};
+            let text=" ";
+            for(let [fruit,amount] of Object.entries(fruits)){
+                text += fruit+ ":" + amount +"<br>";
+            }
+            document.getElementById('fruit').innerHTML=text;
+    
+        </script>
+</body>
+
+</html>

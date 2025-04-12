@@ -1,0 +1,23 @@
+.message{
+    height: 10vmax;
+    background-color: rgb(210, 230, 248);
+   
+}
+.txt{
+    color: brown;
+    font-size: 40px;
+    font-weight: 800;
+  
+}
+button{
+    background-color: rgb(233, 214, 251);
+}
+button:hover{
+    background-color: gray;
+    color: white;
+    font-weight: 700;
+}
+.hidden{
+    display: none;
+
+}
